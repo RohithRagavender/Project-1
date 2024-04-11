@@ -205,10 +205,10 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 40vh;
+  height:25vh;
   background-color: gold;
   justify-content: flex-start;
-  transition: ease-in-out(0.6, 0.05, 0.28, 0.91);
+  transition:2s ease-in;
 }
 
 .mobile-menu {
@@ -1455,7 +1455,7 @@ transition:1s ease-out;
     width: 200px;
     float: right;
     left: 135px;
-    top: -45px;
+    top: -275px;
   }
 
   .btn button {
@@ -1502,7 +1502,7 @@ transition:1s ease-out;
     display: inline-block;
     box-sizing: border-box;
     height: 50%;
-    left: 20px;
+    left:80px;
     width: 90%;
   }
 
@@ -1689,14 +1689,15 @@ display: none;
   display: inline-block;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .card1,.card2,.card3{
   top: 770px;  
   background-color: white;
-  width: 100%;
+  width: 80%;
   position: relative;
-  left:10px;
+  left:60px;
   margin-bottom: 25px;
 }
 .emj{
@@ -1725,11 +1726,12 @@ height:1200px;
   height:1200px;
 }
 
+
 .tit h1{
   font-size:small;
   width: 29%;
   position:absolute;
-  left: 30px;
+  left: 38px;
 }
 .tit p{
   font-size: small;
@@ -1739,11 +1741,12 @@ height:1200px;
   color: black;
   top:135px;
   background-color: white;
-  left:30px;
+  left:38px;
 }
 
 .tits{
-  left:28px;
+  left:38px;
+  height: 470px;
 }
 .tex{
   position:relative;
@@ -1755,6 +1758,7 @@ height:1200px;
 .tit2{
   position: absolute;
   top: 550px;
+  left: 25px;
 }
   
   .tit2 h1{
@@ -1776,9 +1780,9 @@ height:1200px;
 
   .tits1{
     position:relative;
-    left:28px;
+    left:38px;
     top: -519px;
-    height:500px;
+    height:470px;
     width: 90%;
   }
   .tex1{
@@ -1822,7 +1826,8 @@ height:1200px;
   .car{
     display: inline-block;
     position: relative;
-    top: 1650px;
+    top: 1620px;
+    left:65px;
   }
 
   .con,.con1,.con2,.con3{
