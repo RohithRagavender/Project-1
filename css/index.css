@@ -1,0 +1,1831 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Navigation*
+
+.logo {
+    position: relative;
+    padding-left: 150px;
+    padding-top: 25px;
+    padding-bottom:2px ;
+    margin-bottom: -45px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.nav {
+    background-color: #131313;
+    border-bottom: 3px solid #ffb710;
+    height: fit-content;
+    padding-bottom:12px ;
+}
+
+.menu {
+    margin:0px;
+    height: fit-content;
+}
+
+.menu ul {
+    position: relative;
+    width:fit-content;
+    left: 500px;
+    bottom: 3px;
+}
+
+.menu button {
+    background-color: #ffb710;
+    padding: 15px;
+    margin-left: 190px;
+    border-radius: 250px;
+}
+.menu button a{
+    color:#131313;
+    font-weight:600;
+}
+.menu li {
+    display: inline-flex;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 800;
+    margin: 15px;
+}
+
+.menu li a:hover{
+    color: #ffb710;
+}
+
+/*Navigation*/
+
+
+/*
+.menu a{
+    text-decoration:none;
+}
+
+.menu ul{
+    margin: 50px;
+    list-style:none;
+    width: fit-content;
+}
+
+
+.menu li{ 
+    margin: 50px;
+    border: 2px solid red;
+    padding: 5px ;
+}*/
+
+/* Navigation Section Starting */
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+  height: 70px;
+  border-bottom: 3px solid gold;
+}
+
+.logo img {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #09c372;
+  width: 50px;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+
+  padding: 10px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: red;
+  border-radius: 5px;
+}
+
+#login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid #498afb;
+}
+
+#signup {
+  border: 1px solid #ff3860;
+}
+
+#signup a {
+  color: #ff3860;
+}
+
+#login a {
+  color: #498afb;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/*
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  */
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  background-color: gold;
+  justify-content: flex-start;
+  transition: ease-in-out(0.6, 0.05, 0.28, 0.91);
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+}
+
+span {
+  color: #ffa500;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -129px;
+  object-fit: cover;
+}
+
+.para {
+  width: 50%;
+  padding: 50px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.content h1 {
+  line-height: 50px;
+  font-size: 3rem;
+  color: white;
+}
+
+.content p {
+  margin-top: 25px;
+  margin-left: 10px;
+  color: whitesmoke;
+  /*  font-size: clamp(1.5rem,5vw,1rem);*/
+}
+
+
+.container {
+  opacity: 1;
+  padding-top: 0px;
+  transform: translateY(200px);
+  transition: opacity 5s;
+}
+
+.container.content {
+  opacity: 5;
+  transform: translateY(0);
+  transform: 5s;
+}
+
+
+.container p {
+  opacity: 1;
+  line-height: 45px;
+  transform: translateY(0);
+  transform: 5s;
+}
+
+
+/*BUTTON DESIGN*/
+
+button {
+  border: none;
+  padding: 0px 40px;
+  font-size: medium;
+  position: relative;
+  background: transparent;
+  color: black;
+  border: 3px solid #ffa500;
+  cursor: pointer;
+  transition: all 0.7s;
+  overflow: hidden;
+  border-radius: 100px;
+  height: 50px;
+  background-color: #ffa500;
+}
+
+button :hover {
+  color: white;
+}
+
+/*
+span {
+  transition: all 0.7s;
+  z-index: -1;
+}
+
+button .first {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background: #ffa500;
+}
+
+button:hover .first {
+  top: 0;
+  right: 0;
+}
+
+button .second {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: -100%;
+  height: 100%;
+  width: 25%;
+  background: #ffa500;
+}
+
+button:hover .second {
+  top: 0;
+  left: 50%;
+}
+
+button .third {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  top: 100%;
+  width: 25%;
+  background: #ffa500;
+}
+
+button:hover .third {
+  top: 0;
+  left: 25%;
+}
+
+button .fourth {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  width: 25%;
+}
+
+button:hover .fourth {
+  top: 0;
+  left: 0;
+}
+
+/* BUTTON DESING */
+
+.para {
+  animation: slide 5s;
+}
+
+.content2 {
+  animation: slides 5s;
+}
+
+.mark {
+  background: black;
+  width: 100%;
+  overflow: hidden;
+  height: 70px;
+  color: red;
+  position: relative;
+  top: 67px;
+}
+
+.top {
+  text-align: center;
+  width: 30%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  background-color: #ffa500;
+}
+
+.top p {
+  margin-left: 200px;
+  padding-top: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.marq {
+  width: 69.2%;
+  left: 30%;
+  top: 15px;
+  position: relative;
+}
+
+.conq p {
+  display: inline-flex;
+  margin-left: 40px;
+  color: aliceblue;
+}
+
+.p {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ff3860;
+}
+
+.p1 {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: violet;
+}
+
+.p2 {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #09c372;
+}
+
+/*
+.c1 span{
+  position: relative;
+  top:-5px;
+  left: -80px;
+}
+
+.c2 marquee{
+  margin-left:78px;
+  margin-top:5px;
+  
+}
+.p{
+  position:relative;
+  top:-32px;
+  width:100%;
+  overflow: hidden;
+}
+/*
+.c2{
+  margin-left:120px;
+  color: white;
+  border: 5px solid red;
+}
+*/
+
+
+/* Game Collections */
+.gallery {
+  opacity: 0;
+  padding-top: 0px;
+  transform: translateY(300px);
+  transition: opacity 3s;
+}
+
+.gallery.show {
+  opacity: 1;
+  transform: translateY(0);
+  transform: 3s;
+}
+.gallery {
+  position: absolute;
+  top: 950px;
+  align-content: center;
+  display: flex;
+  gap: 1rem;
+  box-sizing: border-box;
+  height: 50%;
+  width: 70%;
+  left: 250px;
+}
+
+.gallery>div {
+  flex: 1;
+  transition: all 1s;
+}
+
+.gallery>div:nth-child(1) {
+  background: url("../src/1.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+
+.gallery>div:nth-child(2) {
+  background: url("../src/2.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+
+.gallery>div:nth-child(3) {
+  background: url("../src/3.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.gallery>div:nth-child(4) {
+  background: url("../src/4.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+
+.gallery>div:hover {
+  flex: 2;
+  opacity: 1;
+}
+
+.first h1 {
+  color: white;
+  background-color: #ff3860;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.first a {
+  color: blanchedalmond;
+  position: relative;
+  top: 75px;
+  margin: 15px;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.first p {
+  margin: 15px;
+  color: aqua;
+  position: relative;
+  top: 75px;
+}
+
+.second h1 {
+  color: white;
+  background-color: #09c372;
+  width: 120px;
+  text-align: center;
+  margin: 15px;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.second a {
+  color: rgba(153, 12, 12, 0.801);
+  position: relative;
+  top: 75px;
+  margin: 15px;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.second p {
+  margin: 15px;
+  color: blanchedalmond;
+  position: relative;
+  top: 75px;
+}
+
+.third h1 {
+  color: white;
+  background-color: #ff3860;
+  width: 80px;
+  text-align: center;
+  margin: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+}
+
+.third a {
+  color: yellow;
+  position: relative;
+  top: 65px;
+  font-weight: 800;
+  margin: 15px;
+  text-align: justify;
+}
+
+.third p {
+  margin: 15px;
+  color: gainsboro;
+  position: relative;
+  top: 75px;
+}
+
+.fourth h1 {
+  color: white;
+  background-color: #498afb;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.fourth a {
+  color: blanchedalmond;
+  position: relative;
+  top: 85px;
+  margin: 15px;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.fourth p {
+  margin: 15px;
+  color: lightgreen;
+  position: relative;
+  top: 89px;
+}
+
+/* Game Collections Ending */
+
+
+/*Recent Games Section Starting  */
+
+.gam img {
+  width: 100%;
+  position: relative;
+  top: 600px;
+  object-fit: fill;
+  height: 100%;
+}
+
+.word h1 {
+  position: relative;
+  background-color: #ff3860;
+  text-align: center;
+  left: 45%;
+  color: white;
+  font-size: medium;
+  padding: 5px;
+  top: -150px;
+  width: 80px;
+}
+
+
+.word p {
+  position: relative;
+  text-align: center;
+  right: 35px;
+  top: -140px;
+  font-weight:500;
+  color: black;
+  font-size: xx-large;
+  padding: 5px;
+}
+
+
+/*Recent Games Section Ending */
+
+/* Cards Desinging Starting */
+.cards {
+  width: 100%;
+  height: 105%;
+  display: flex;
+}
+
+.cards {
+  opacity: 0;
+  padding-top: 0px;
+  transform: translateY(300px);
+  transition: opacity 3s;
+}
+
+.cards.show {
+  opacity: 1;
+  transform: translateY(0);
+  transform: 2s;
+}
+
+.card1 {
+  position: relative;
+  width: 27%;
+  top: -100px;
+  left: 150px;
+  overflow: hidden;
+}
+
+.card1 h1 {
+  position: absolute;
+  background-color: #ff3860;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-size: medium;
+  padding: 5px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.cont  {
+  background-color: white;
+  height: 100%;
+}
+
+.cont h2 {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 15px;
+  font-size: xx-large;
+}
+
+.cont p {
+  color: rgba(0, 0, 0, 0.525);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+.cont a{
+  color: rgba(0, 0, 0, 0.525);
+  font-size: medium;
+}
+.emj{
+  background-color:#ff3860;
+  width: 25%;
+  position: relative;
+  left: 293px;
+  border-radius: 25px;
+  height: 25%;
+}
+
+.emj img{
+  width: 25%;
+  position: relative;
+  left:20px;
+}
+
+.emj:hover{
+  background-color: royalblue;
+}
+
+
+/*Card2 Starting*/
+
+.card2 {
+  position: relative;
+  width: 27%;
+  top: -100px;
+  left: 160px;
+  overflow: hidden;
+}
+
+.card2 h1 {
+  position: absolute;
+  background-color:aqua;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-size: medium;
+  padding: 5px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.cont  {
+  background-color: white;
+  height: 100%;
+}
+
+.cont h2 {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 15px;
+  font-size: xx-large;
+}
+
+.cont p {
+  color: rgba(0, 0, 0, 0.525);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+.cont a{
+  color: rgba(0, 0, 0, 0.525);
+  font-size: medium;
+  margin-top: 25px;
+}
+.emj{
+  background-color:#ff3860;
+  width: 25%;
+  position: relative;
+  left: 293px;
+  border-radius: 25px;
+  height: 25%;
+}
+
+.emj img{
+  width: 25%;
+  position: relative;
+  left:20px;
+}
+
+.emj:hover{
+  background-color: royalblue;
+}
+
+/*Card3 Starting */
+
+.card3 {
+  position: relative;
+  width: 27%;
+  top: -100px;
+  left: 170px;
+  overflow: hidden;
+}
+
+.card3 h1 {
+  position: absolute;
+  background-color:#09c372;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-size: medium;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.cont  {
+  background-color: white;
+  height: 100%;
+}
+
+.cont h2 {
+  font-family: 'Times New Roman', Times, serif;
+
+  margin: 15px;
+  font-size: xx-large;
+}
+
+.cont p {
+  color: rgba(0, 0, 0, 0.525);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+.cont a{
+  color: rgba(0, 0, 0, 0.525);
+  font-size: medium;
+}
+.emj{
+  background-color:#ff3860;
+  width: 25%;
+  position: relative;
+  left: 293px;
+  border-radius: 25px;
+  height: 25%;
+}
+
+.emj img{
+  width: 25%;
+  position: relative;
+  left:20px;
+}
+
+.emj:hover{
+  background-color: royalblue;
+}
+
+
+/*Tournment Section Starting*/
+.thor{
+  position: relative;
+  width: 100%;
+  top:6.5px;
+  height:490px;
+}
+.im{
+  height: 490px;
+  overflow: hidden;
+}
+
+.im img{
+  width:100vw;
+}
+
+.tit h1{
+  position: absolute;
+  width: 10%;
+  top: 100px;
+  left: 150px;
+  background-color: rgb(255, 119, 0);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:medium;
+  height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px;
+}
+.tit2 h1{
+  position: absolute;
+  width: 10%;
+  top: 100px;
+  left: 850px;
+  background-color: rgb(255, 119, 0);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:medium;
+  height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px;
+
+}
+.tit p{
+  position: absolute;
+  width:200px;
+  top: 142px;
+  left: 150px;
+  color:#ffa500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:small;
+  height: 35px;
+  box-shadow: 10px 2px 2px #ffa500;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px;
+  z-index:0;
+}
+.tit2 p{
+  position: absolute;
+  width:200px;
+  top: 140px;
+  left: 850px;
+  color:#ffa500;
+  box-shadow: 10px 2px 2px #ffa500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:small;
+  height: 35px;
+  z-index:0;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px;
+}
+span{
+  color: #ffa500;
+  font-weight: 600;
+}
+.tits{
+  background-color: rgba(0, 0, 0, 0.348);
+  width:40%;
+  height: 52%;
+  position:relative;
+  top:-358px;
+  left: 150px;
+  border: 5px solid;
+  border-image: linear-gradient(to bottom, turquoise, greenyellow) 1 1;
+  display: flex;
+}
+
+.tits1{
+  background-color: rgba(0, 0, 0, 0.348);
+  width:40%;
+  height: 52%;
+  position:relative;
+  top:-615px;
+  z-index:0;
+  left: 850px;
+  border: 5px solid;
+  border-image: linear-gradient(to bottom, turquoise, greenyellow) 1 1;
+  display: flex;
+
+}
+.img2 img{
+width: 260px;
+margin-top:5px;
+height: 250px;
+padding: 45px;
+}
+
+.img3 img{
+  width: 260px;
+  height: 250px;
+  padding: 45px;
+  margin-top: 5px;
+  }
+  
+.tex h2{
+  color:#ffa500;
+  position: relative;
+  top: 15px;
+}
+.tex p{
+  color: white;
+  line-height:25px;
+  position:relative;
+  top: 25px;
+  font-size: small;
+}
+.tex1 h2{
+  color:#ffa500;
+  position: relative;
+  top: 15px;
+}
+.tex1 p{
+  color: white;
+  line-height:25px;
+  position:relative;
+  top: 25px;
+  font-size: small;
+}
+
+.tits>p{
+  position:absolute;
+  width:190px;
+  top: 135px;
+  left: 350px;
+  background-color:#ffa500;
+  color:black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:small;
+  height: 35px;
+  padding:12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*Tournment Section Ending*/
+/*Cards Desiging Ending*/
+
+/* Review Section Starting */
+.gm img {
+  width: 100%;
+  position: relative;
+  top:9px;
+  z-index:-1;
+  object-fit: fill;
+  height: 100%;
+}
+
+.wor h1 {
+  position: relative;
+  background-color: #ff3860;
+  text-align: center;
+  left: 45%;
+  color: white;
+  font-size: medium;
+  padding: 5px;
+  top:-600px;
+  width: 80px;
+}
+
+
+.wor p {
+  position: relative;
+  text-align: center;
+  right:25px;
+  top: -580px;
+  font-weight:500;
+  color: black;
+  font-size: xx-large;
+  padding: 5px;
+}
+
+.car .pic h2{
+  position:relative;
+  top:25px;
+  z-index:0;
+  color: white;
+  font-weight: 100;
+  background-color: #ffa500;
+  width: fit-content;
+  padding: 10px;
+  left:65px;
+  border-radius:50%;
+}
+
+.car{
+  
+  position:relative;
+  top:-580px;
+  display: flex;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 20px;
+}
+
+.car {
+  opacity: 0;
+  padding-top: 0px;
+  transform: translateY(300px);
+  transition: opacity 3s;
+}
+
+.car.show {
+  opacity: 1;
+  transform: translateY(0);
+  transform: 2s;
+}
+
+.car .pic img{
+  position:relative;
+  left: 25px;
+  height: 450px;
+  z-index:-1;
+}
+
+.con{
+  width: 345px;
+  left:25px;
+  height:100%;
+  position:absolute;
+  top:-65px;
+  z-index: 1;
+  opacity: 0;
+  background-color:transparent;
+}
+
+.con>h3{
+  position: absolute;
+  top:450px;
+}
+
+.con p{
+  text-align: justify;
+  margin-left:0px;
+  position: absolute;
+  top: 480px; 
+}
+
+.con:hover{
+cursor: pointer;
+background-color:transparent;
+transform: translateY(120px);
+opacity:1;
+z-index:1;
+transition:1s ease-out;
+}
+
+/*2nd one Starting*/
+
+
+
+.car .pic2 img{
+  position:relative;
+  left: 25px;
+  height: 450px;
+  z-index:-1;
+}
+
+.car .pic2 h2{
+  position:relative;
+  top:25px;
+  z-index:0;
+  color: white;
+  font-weight: 100;
+  background-color:purple;
+  width: fit-content;
+  padding: 10px;
+  left:65px;
+  border-radius:50%;
+}
+
+
+.con1{
+  width: 345px;
+  left:391px;
+  height:100%;
+  position:absolute;
+  top:-70px;
+  z-index: 1;
+  opacity: 0;
+  background-color:transparent;
+}
+
+.con1>h3{
+  position: absolute;
+  top:450px;
+  font-weight: 700;
+}
+
+.con1 p{
+  text-align: justify;
+  margin-left:0px;
+  position: absolute;
+  top: 480px; 
+}
+
+.con1:hover{
+cursor: pointer;
+background-color:transparent;
+transform: translateY(120px);
+opacity:1;
+z-index:1;
+transition:1s ease-out;
+}
+
+/* 2nd One Ending */
+
+/* 3rd One Startin */
+
+
+.car .pic1 img{
+  position:relative;
+  left: 25px;
+  height: 450px;
+  z-index:-1;
+}
+
+.car .pic1 h2{
+  position:relative;
+  top:25px;
+  z-index:0;
+  color: white;
+  font-weight: 100;
+  background-color:#09c372;
+  width: fit-content;
+  padding: 10px;
+  left:65px;
+  border-radius:50%;
+}
+
+
+.con2{
+  width: 345px;
+  left:757px;
+  height:100%;
+  position:absolute;
+  top:-70px;
+  z-index: 1;
+  opacity: 0;
+  background-color:transparent;
+}
+
+
+.con2>h3{
+  position: absolute;
+  top:450px;
+}
+
+.con2 p{
+  text-align: justify;
+  margin-left:0px;
+  position: absolute;
+  top: 480px; 
+}
+
+.con2:hover{
+cursor: pointer;
+background-color:transparent;
+transform: translateY(120px);
+opacity:1;
+z-index:1;
+transition:1s ease-out;
+}
+
+/* 3rd One Ending */
+
+/* 4th One Starting */
+
+.car .pic3 img{
+  position:relative;
+  left: 25px;
+  height: 450px;
+  z-index:-1;
+}
+
+.car .pic3 h2{
+  position:relative;
+  top:25px;
+  z-index:0;
+  color: white;
+  font-weight: 100;
+  background-color:#ff3860;
+  width: fit-content;
+  padding: 10px;
+  left:65px;
+  border-radius:50%;
+}
+
+
+.con3{
+  width: 345px;
+  left:1122px;
+  height:100%;
+  position:absolute;
+  top:-70px;
+  z-index: 1;
+  opacity:0;
+  background-color:transparent;
+}
+
+
+.con3>h3{
+  position: absolute;
+  top:450px;
+}
+
+.con3 p{
+  text-align: justify;
+  margin-left:0px;
+  position: absolute;
+  top: 480px; 
+}
+
+.con3:hover{
+cursor: pointer;
+background-color:transparent;
+transform: translateY(120px);
+opacity:1;
+z-index:1;
+transition:1s ease-out;
+}
+
+/* 4th One Ending */
+/*Review Section Ending */
+
+
+/* Animation Effect starting */
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-190%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slides {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation Effect Ending */
+
+@media only screen and (max-width: 600px) {
+
+
+  body {
+    background-image: url(./log.jpg);
+  }
+
+  /* Navigation section Starting */
+
+  header {
+    background-color: black;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .logo img {
+    width: 39%;
+    top: 20px;
+    left: 10px;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  #hr {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    z-index: 1;
+    margin-right: -10px;
+  }
+
+  .mobile-menu {
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+
+  .mobile-menu li a {
+    color: black;
+  }
+
+  .container {
+    width: 55.5%;
+  }
+
+  .container img {
+    width: 190%;
+    background-size: contain;
+    height: 700px;
+
+  }
+
+  .content {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    left: -70px;
+    margin: 5px;
+  }
+
+  .para {
+    padding: 70px;
+    position: absolute;
+    top: -5%;
+  }
+
+  .content h1 {
+    line-height: 50px;
+    position: relative;
+    left: -25px;
+    font-size: xx-large;
+    color: white;
+    padding-left: 25px;
+  }
+
+  .content p {
+    margin-top: 25px;
+    line-height: 35px;
+    position: relative;
+    left: -4px;
+    color: whitesmoke;
+  }
+
+  /* Navigation Section Ending */
+
+  /* Button Section */
+
+  .btn {
+    height: 58px;
+    position: relative;
+    width: 200px;
+    float: right;
+    left: 135px;
+    top: -45px;
+  }
+
+  .btn button {
+    font-size: small;
+    font-weight: 600;
+    color: black;
+    background-color: #ffa500;
+  }
+
+  /*Button Section*/
+
+  /*Marquee Section */
+  .top {
+    display: none;
+  }
+
+  .mark {
+    width: 105.5%;
+    position: relative;
+  }
+
+  .marq {
+    top: 15px;
+    left: -10px;
+    width: 100%;
+  }
+
+  /*Marquee Section */
+
+
+  /*Game Sections */
+  .games {
+    gap: 1rem;
+    height: 900px;
+    width: 395px;
+    top: 65px;
+    position: relative;
+  }
+
+  .gallery {
+    position: relative;
+    display: inline-block;
+    top: 550px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 50%;
+    left: 20px;
+    width: 90%;
+  }
+
+  .gallery>div {
+    flex: 1;
+    transition: all 1s;
+  }
+
+  .gallery>div:nth-child(1) {
+    background: url("../src/1.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+
+  .gallery>div:nth-child(2) {
+    background: url("../src/2.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+
+  .gallery>div:nth-child(3) {
+    background: url("../src/3.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  .gallery>div:nth-child(4) {
+    background: url("../src/4.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+
+  .gallery>div:hover {
+    flex: 2;
+    opacity: 1;
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth {
+    height: 350px;
+  }
+
+  .first h1 {
+    color: white;
+    background-color: #ff3860;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .first a {
+    color: blanchedalmond;
+    position: relative;
+    top: 65px;
+    font-size: larger;
+    margin: 5px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .first p {
+    margin: 15px;
+    color: aqua;
+    position: relative;
+    top: 60px;
+  }
+
+  .first,
+  .second,
+  .third {
+    margin-bottom: 15px;
+  }
+
+  .second h1 {
+    color: white;
+    background-color: #09c372;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .second a {
+    color: rgba(153, 12, 12, 0.801);
+    position: relative;
+    top: 65px;
+    font-size: large;
+    margin: 15px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .second p {
+    margin: 15px;
+    color: aqua;
+    position: relative;
+    top: 60px;
+  }
+
+  .third h1 {
+    color: white;
+    background-color: #ff3860;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .third a {
+    color: yellow;
+    position: relative;
+    top: 65px;
+    font-size: large;
+    margin: 15px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .third p {
+    margin: 15px;
+    color: aqua;
+    position: relative;
+    top: 60px;
+  }
+
+  .fourth h1 {
+    color: white;
+    background-color: #498afb;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .fourth a {
+    color: blanchedalmond;
+    position: relative;
+    top: 65px;
+    font-size: large;
+    margin: 15px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .fourth p {
+    margin: 15px;
+    color: turquoise;
+    position: relative;
+    top: 60px;
+  }
+
+  /* End of List of GameType Section */
+
+  /*Cards Design Starting*/
+  .gam img{
+display: none;
+  }
+  .word{
+    position: relative;
+    top: 850px;
+  }
+  .word h1{
+    margin-left: -5px;
+  }
+  .word p{
+    margin-top: -2px;
+    margin-left: 110px;
+  }
+.cards{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.card1,.card2,.card3{
+  top: 770px;  
+  background-color: white;
+  width: 100%;
+  position: relative;
+  left:10px;
+  margin-bottom: 25px;
+}
+.emj{
+  margin-left: -20px;
+}
+.thor{
+  position: relative;
+  top:850px;
+  object-fit: fill;
+}
+.tits,.tit2{
+  display: inline-block;
+  position: absolute;
+  top: 133px;
+  left: 15px;
+  width: 90%;
+  height: 90%;
+}
+.im{
+width:100%;
+height:1200px;
+}
+.im img{
+  width:105.7%;
+  position: absolute;
+  height:1200px;
+}
+
+.tit h1{
+  font-size:small;
+  width: 29%;
+  position:absolute;
+  left: 30px;
+}
+.tit p{
+  font-size: small;
+  width:50%;
+  position: absolute;
+  z-index:0;
+  color: black;
+  top:135px;
+  background-color: white;
+  left:30px;
+}
+
+.tits{
+  left:28px;
+}
+.tex{
+  position:relative;
+  top: -65px;  
+}
+.img3 img{
+  width:100%;
+}
+.tit2{
+  position: absolute;
+  top: 550px;
+}
+  
+  .tit2 h1{
+    font-size:small;
+    width:32%;
+    position:absolute;
+    left:13px;
+  }
+  .tit2 p{
+    font-size: small;
+    width:60%;
+    position: absolute;
+    z-index:0;
+    color: black;
+    top:135px;
+    background-color: white;
+    left:18px;
+  }
+
+  .tits1{
+    position:relative;
+    left:28px;
+    top: -519px;
+    height:500px;
+    width: 90%;
+  }
+  .tex1{
+    width: 100%;
+    position: absolute;
+  }
+  .tex1 h2{
+    width: 250px;
+    position: relative;
+    top: 220px;
+    left:0px;
+  }
+  
+  .tex1 p{
+    width: 250px;
+    position: relative;
+    top: 220px;
+    left:0px;
+    text-align:justify;
+  }
+
+  /*Card design Ending */ 
+
+  /*Review Section Starting */
+  .gm{
+    position: relative;
+    top: 1650px;
+  }
+  .gm img{
+    display: none;
+  }
+  .wor{
+    position: relative;
+    top: 550px;
+  }
+  .wor p{
+    position: relative;
+    left:25px;
+  }
+
+  .car{
+    display: inline-block;
+    position: relative;
+    top: 1650px;
+  }
+
+  .con,.con1,.con2,.con3{
+    display: none;
+  }
+}
