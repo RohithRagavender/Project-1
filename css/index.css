@@ -1,5 +1,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+.loader_bg{
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader{
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+.loader:before,.loader:after{
+  content: '';
+  border: 1em solid #ffa500;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader:before{
+  animation-delay: 0.3s;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +44,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 
 /*Navigation*
 
@@ -205,7 +242,7 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:25vh;
+  height:30vh;
   background-color: gold;
   justify-content: flex-start;
   transition:2s ease-in;
@@ -478,9 +515,9 @@ button:hover .fourth {
   display: flex;
   gap: 1rem;
   box-sizing: border-box;
-  height: 50%;
-  width: 70%;
-  left: 250px;
+  height:55%;
+  width:90%;
+  left: 100px;
 }
 
 .gallery>div {
@@ -520,7 +557,7 @@ button:hover .fourth {
 
 
 .gallery>div:hover {
-  flex: 2;
+  flex:2;
   opacity: 1;
 }
 
@@ -1325,6 +1362,22 @@ transition:1s ease-out;
 
 /* Animation Effect starting */
 
+
+
+@keyframes loader {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
 @keyframes slide {
   0% {
     opacity: 0;
@@ -1404,11 +1457,11 @@ transition:1s ease-out;
   }
 
   .container {
-    width: 55.5%;
+    width:58%;
   }
 
   .container img {
-    width: 190%;
+    width: 112vw;
     background-size: contain;
     height: 700px;
 
@@ -1455,7 +1508,7 @@ transition:1s ease-out;
     width: 200px;
     float: right;
     left: 135px;
-    top: -275px;
+    top: -95px;
   }
 
   .btn button {
@@ -1473,7 +1526,7 @@ transition:1s ease-out;
   }
 
   .mark {
-    width: 105.5%;
+    width: 112vw;
     position: relative;
   }
 
@@ -1489,21 +1542,22 @@ transition:1s ease-out;
   /*Game Sections */
   .games {
     gap: 1rem;
-    height: 900px;
+    height: 100%;
     width: 395px;
     top: 65px;
     position: relative;
   }
 
   .gallery {
+
     position: relative;
     display: inline-block;
-    top: 550px;
+    top: 150px;
     display: inline-block;
     box-sizing: border-box;
-    height: 50%;
-    left:80px;
-    width: 90%;
+    height:150%;
+    left:50px;
+    width:80%;
   }
 
   .gallery>div {
@@ -1551,7 +1605,7 @@ transition:1s ease-out;
   .second,
   .third,
   .fourth {
-    height: 350px;
+    height:350px;
   }
 
   .first h1 {
@@ -1676,7 +1730,7 @@ display: none;
   }
   .word{
     position: relative;
-    top: 850px;
+    top:450px;
   }
   .word h1{
     margin-left: -5px;
@@ -1689,30 +1743,46 @@ display: none;
   display: inline-block;
   width: 100%;
   height: 100%;
+  top:-450px;
   position: relative;
 }
 
+.cards.show{
+  position: relative;
+  top: 250px;
+}
+
 .card1,.card2,.card3{
-  top: 770px;  
+  top: 70px;  
   background-color: white;
   width: 80%;
   position: relative;
+  border: 5px solid black;
   left:60px;
   margin-bottom: 25px;
 }
+
+.img1 img{
+  height: 200px;
+width: 100%;
+background-position-x: left;
+}
+
+
 .emj{
-  margin-left: -20px;
+  display: none;
 }
 .thor{
   position: relative;
-  top:850px;
+  top:350px;
+  width: 100%;
   object-fit: fill;
 }
 .tits,.tit2{
   display: inline-block;
   position: absolute;
   top: 133px;
-  left: 15px;
+  left: 0px;
   width: 90%;
   height: 90%;
 }
@@ -1721,7 +1791,7 @@ width:100%;
 height:1200px;
 }
 .im img{
-  width:105.7%;
+  width:112vw;
   position: absolute;
   height:1200px;
 }
@@ -1809,7 +1879,7 @@ height:1200px;
   /*Review Section Starting */
   .gm{
     position: relative;
-    top: 1650px;
+    top: 1250px;
   }
   .gm img{
     display: none;
@@ -1826,8 +1896,11 @@ height:1200px;
   .car{
     display: inline-block;
     position: relative;
-    top: 1620px;
-    left:65px;
+    top: 1220px;
+    left:45px;
+    
+    width: 80%;
+    overflow: hidden;
   }
 
   .con,.con1,.con2,.con3{

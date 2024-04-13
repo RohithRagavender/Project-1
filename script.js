@@ -1,3 +1,10 @@
+/*Page Loader Function*/
+setTimeout(function(){
+  $('.loader_bg').fadeToggle();
+},800);
+
+/* Page Loader Function */
+
 /* navigation function */
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
