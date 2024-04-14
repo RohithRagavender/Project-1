@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-.loader_bg{
+.loader_bg {
   position: fixed;
   z-index: 999999;
   background: #fff;
@@ -9,7 +8,7 @@
   height: 100%;
 }
 
-.loader{
+.loader {
   border: 0 solid transparent;
   border-radius: 50%;
   width: 150px;
@@ -18,7 +17,9 @@
   top: calc(50vh - 75px);
   left: calc(50vw - 75px);
 }
-.loader:before,.loader:after{
+
+.loader:before,
+.loader:after {
   content: '';
   border: 1em solid #ffa500;
   border-radius: 50%;
@@ -31,7 +32,7 @@
   opacity: 0;
 }
 
-.loader:before{
+.loader:before {
   animation-delay: 0.3s;
 }
 
@@ -242,10 +243,10 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:30vh;
+  height: 30vh;
   background-color: gold;
   justify-content: flex-start;
-  transition:2s ease-in;
+  transition: 2s ease-in;
 }
 
 .mobile-menu {
@@ -330,6 +331,10 @@ button {
   border-radius: 100px;
   height: 50px;
   background-color: #ffa500;
+}
+
+button a{
+  color: black;
 }
 
 button :hover {
@@ -506,8 +511,9 @@ button:hover .fourth {
 .gallery.show {
   opacity: 1;
   transform: translateY(0);
-  transform: 3s;
+  transform: 3s;
 }
+
 .gallery {
   position: absolute;
   top: 950px;
@@ -515,8 +521,8 @@ button:hover .fourth {
   display: flex;
   gap: 1rem;
   box-sizing: border-box;
-  height:55%;
-  width:90%;
+  height: 55%;
+  width: 90%;
   left: 100px;
 }
 
@@ -557,7 +563,7 @@ button:hover .fourth {
 
 
 .gallery>div:hover {
-  flex:2;
+  flex: 2;
   opacity: 1;
 }
 
@@ -696,7 +702,7 @@ button:hover .fourth {
   text-align: center;
   right: 35px;
   top: -140px;
-  font-weight:500;
+  font-weight: 500;
   color: black;
   font-size: xx-large;
   padding: 5px;
@@ -722,7 +728,7 @@ button:hover .fourth {
 .cards.show {
   opacity: 1;
   transform: translateY(0);
-  transform: 2s;
+  transform: 2s;
 }
 
 .card1 {
@@ -745,7 +751,7 @@ button:hover .fourth {
   border-radius: 5px;
 }
 
-.cont  {
+.cont {
   background-color: white;
   height: 100%;
 }
@@ -761,12 +767,14 @@ button:hover .fourth {
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
 }
-.cont a{
+
+.cont a {
   color: rgba(0, 0, 0, 0.525);
   font-size: medium;
 }
-.emj{
-  background-color:#ff3860;
+
+.emj {
+  background-color: #ff3860;
   width: 25%;
   position: relative;
   left: 293px;
@@ -774,13 +782,13 @@ button:hover .fourth {
   height: 25%;
 }
 
-.emj img{
+.emj img {
   width: 25%;
   position: relative;
-  left:20px;
+  left: 20px;
 }
 
-.emj:hover{
+.emj:hover {
   background-color: royalblue;
 }
 
@@ -797,7 +805,7 @@ button:hover .fourth {
 
 .card2 h1 {
   position: absolute;
-  background-color:aqua;
+  background-color: aqua;
   text-align: center;
   margin: 20px;
   color: white;
@@ -807,7 +815,7 @@ button:hover .fourth {
   border-radius: 5px;
 }
 
-.cont  {
+.cont {
   background-color: white;
   height: 100%;
 }
@@ -823,13 +831,15 @@ button:hover .fourth {
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
 }
-.cont a{
+
+.cont a {
   color: rgba(0, 0, 0, 0.525);
   font-size: medium;
   margin-top: 25px;
 }
-.emj{
-  background-color:#ff3860;
+
+.emj {
+  background-color: #ff3860;
   width: 25%;
   position: relative;
   left: 293px;
@@ -837,13 +847,13 @@ button:hover .fourth {
   height: 25%;
 }
 
-.emj img{
+.emj img {
   width: 25%;
   position: relative;
-  left:20px;
+  left: 20px;
 }
 
-.emj:hover{
+.emj:hover {
   background-color: royalblue;
 }
 
@@ -859,7 +869,7 @@ button:hover .fourth {
 
 .card3 h1 {
   position: absolute;
-  background-color:#09c372;
+  background-color: #09c372;
   text-align: center;
   margin: 20px;
   color: white;
@@ -869,7 +879,7 @@ button:hover .fourth {
   border-radius: 5px;
 }
 
-.cont  {
+.cont {
   background-color: white;
   height: 100%;
 }
@@ -886,12 +896,14 @@ button:hover .fourth {
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
 }
-.cont a{
+
+.cont a {
   color: rgba(0, 0, 0, 0.525);
   font-size: medium;
 }
-.emj{
-  background-color:#ff3860;
+
+.emj {
+  background-color: #ff3860;
   width: 25%;
   position: relative;
   left: 293px;
@@ -899,34 +911,35 @@ button:hover .fourth {
   height: 25%;
 }
 
-.emj img{
+.emj img {
   width: 25%;
   position: relative;
-  left:20px;
+  left: 20px;
 }
 
-.emj:hover{
+.emj:hover {
   background-color: royalblue;
 }
 
 
 /*Tournment Section Starting*/
-.thor{
+.thor {
   position: relative;
   width: 100%;
-  top:6.5px;
-  height:490px;
+  top: 6.5px;
+  height: 490px;
 }
-.im{
+
+.im {
   height: 490px;
   overflow: hidden;
 }
 
-.im img{
-  width:100vw;
+.im img {
+  width: 100vw;
 }
 
-.tit h1{
+.tit h1 {
   position: absolute;
   width: 10%;
   top: 100px;
@@ -934,13 +947,14 @@ button:hover .fourth {
   background-color: rgb(255, 119, 0);
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:medium;
+  font-size: medium;
   height: 35px;
   text-align: center;
   text-transform: uppercase;
   padding: 8px;
 }
-.tit2 h1{
+
+.tit2 h1 {
   position: absolute;
   width: 10%;
   top: 100px;
@@ -948,122 +962,130 @@ button:hover .fourth {
   background-color: rgb(255, 119, 0);
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:medium;
+  font-size: medium;
   height: 35px;
   text-align: center;
   text-transform: uppercase;
   padding: 8px;
 
 }
-.tit p{
+
+.tit p {
   position: absolute;
-  width:200px;
+  width: 200px;
   top: 142px;
   left: 150px;
-  color:#ffa500;
+  color: #ffa500;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:small;
+  font-size: small;
   height: 35px;
   box-shadow: 10px 2px 2px #ffa500;
   text-align: center;
   text-transform: uppercase;
   padding: 8px;
-  z-index:0;
+  z-index: 0;
 }
-.tit2 p{
+
+.tit2 p {
   position: absolute;
-  width:200px;
+  width: 200px;
   top: 140px;
   left: 850px;
-  color:#ffa500;
+  color: #ffa500;
   box-shadow: 10px 2px 2px #ffa500;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:small;
+  font-size: small;
   height: 35px;
-  z-index:0;
+  z-index: 0;
   text-align: center;
   text-transform: uppercase;
   padding: 8px;
 }
-span{
+
+span {
   color: #ffa500;
   font-weight: 600;
 }
-.tits{
+
+.tits {
   background-color: rgba(0, 0, 0, 0.348);
-  width:40%;
+  width: 40%;
   height: 52%;
-  position:relative;
-  top:-358px;
+  position: relative;
+  top: -358px;
   left: 150px;
   border: 5px solid;
   border-image: linear-gradient(to bottom, turquoise, greenyellow) 1 1;
   display: flex;
 }
 
-.tits1{
+.tits1 {
   background-color: rgba(0, 0, 0, 0.348);
-  width:40%;
+  width: 40%;
   height: 52%;
-  position:relative;
-  top:-615px;
-  z-index:0;
+  position: relative;
+  top: -615px;
+  z-index: 0;
   left: 850px;
   border: 5px solid;
   border-image: linear-gradient(to bottom, turquoise, greenyellow) 1 1;
   display: flex;
 
 }
-.img2 img{
-width: 260px;
-margin-top:5px;
-height: 250px;
-padding: 45px;
+
+.img2 img {
+  width: 260px;
+  margin-top: 5px;
+  height: 250px;
+  padding: 45px;
 }
 
-.img3 img{
+.img3 img {
   width: 260px;
   height: 250px;
   padding: 45px;
   margin-top: 5px;
-  }
-  
-.tex h2{
-  color:#ffa500;
+}
+
+.tex h2 {
+  color: #ffa500;
   position: relative;
   top: 15px;
 }
-.tex p{
+
+.tex p {
   color: white;
-  line-height:25px;
-  position:relative;
-  top: 25px;
-  font-size: small;
-}
-.tex1 h2{
-  color:#ffa500;
+  line-height: 25px;
   position: relative;
-  top: 15px;
-}
-.tex1 p{
-  color: white;
-  line-height:25px;
-  position:relative;
   top: 25px;
   font-size: small;
 }
 
-.tits>p{
-  position:absolute;
-  width:190px;
+.tex1 h2 {
+  color: #ffa500;
+  position: relative;
+  top: 15px;
+}
+
+.tex1 p {
+  color: white;
+  line-height: 25px;
+  position: relative;
+  top: 25px;
+  font-size: small;
+}
+
+.tits>p {
+  position: absolute;
+  width: 190px;
   top: 135px;
   left: 350px;
-  background-color:#ffa500;
-  color:black;
+  background-color: #ffa500;
+  color: black;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:small;
+  font-size: small;
   height: 35px;
-  padding:12px;
+  padding: 12px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1072,11 +1094,18 @@ padding: 45px;
 /*Cards Desiging Ending*/
 
 /* Review Section Starting */
+
+.las {
+  width: 100%;
+  height: 870px;
+  position: relative;
+}
+
 .gm img {
   width: 100%;
   position: relative;
-  top:9px;
-  z-index:-1;
+  top: 9px;
+  z-index: -1;
   object-fit: fill;
   height: 100%;
 }
@@ -1089,7 +1118,7 @@ padding: 45px;
   color: white;
   font-size: medium;
   padding: 5px;
-  top:-600px;
+  top: -600px;
   width: 80px;
 }
 
@@ -1097,31 +1126,31 @@ padding: 45px;
 .wor p {
   position: relative;
   text-align: center;
-  right:25px;
+  right: 25px;
   top: -580px;
-  font-weight:500;
+  font-weight: 500;
   color: black;
   font-size: xx-large;
   padding: 5px;
 }
 
-.car .pic h2{
-  position:relative;
-  top:25px;
-  z-index:0;
+.car .pic h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
   color: white;
   font-weight: 100;
   background-color: #ffa500;
   width: fit-content;
   padding: 10px;
-  left:65px;
-  border-radius:50%;
+  left: 65px;
+  border-radius: 50%;
 }
 
-.car{
-  
-  position:relative;
-  top:-580px;
+.car {
+
+  position: relative;
+  top: -580px;
   display: flex;
   font-family: "Play", sans-serif;
   font-weight: 400;
@@ -1139,104 +1168,108 @@ padding: 45px;
 .car.show {
   opacity: 1;
   transform: translateY(0);
-  transform: 2s;
+  transform: 2s;
 }
 
-.car .pic img{
-  position:relative;
+.car .pic img {
+  position: relative;
   left: 25px;
   height: 450px;
-  z-index:-1;
+  z-index: -1;
 }
 
-.con{
+#h3{
+  display: none;
+}
+
+.con {
   width: 345px;
-  left:25px;
-  height:100%;
-  position:absolute;
-  top:-65px;
+  left: 25px;
+  height: 100%;
+  position: absolute;
+  top: -65px;
   z-index: 1;
   opacity: 0;
-  background-color:transparent;
+  background-color: transparent;
 }
 
-.con>h3{
+.con>h3 {
   position: absolute;
-  top:450px;
+  top: 450px;
 }
 
-.con p{
+.con p {
   text-align: justify;
-  margin-left:0px;
+  margin-left: 0px;
   position: absolute;
-  top: 480px; 
+  top: 480px;
 }
 
-.con:hover{
-cursor: pointer;
-background-color:transparent;
-transform: translateY(120px);
-opacity:1;
-z-index:1;
-transition:1s ease-out;
+.con:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(120px);
+  opacity: 1;
+  z-index: 1;
+  transition: 1s ease-out;
 }
 
 /*2nd one Starting*/
 
 
 
-.car .pic2 img{
-  position:relative;
+.car .pic2 img {
+  position: relative;
   left: 25px;
   height: 450px;
-  z-index:-1;
+  z-index: -1;
 }
 
-.car .pic2 h2{
-  position:relative;
-  top:25px;
-  z-index:0;
+.car .pic2 h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
   color: white;
   font-weight: 100;
-  background-color:purple;
+  background-color: purple;
   width: fit-content;
   padding: 10px;
-  left:65px;
-  border-radius:50%;
+  left: 65px;
+  border-radius: 50%;
 }
 
 
-.con1{
+.con1 {
   width: 345px;
-  left:391px;
-  height:100%;
-  position:absolute;
-  top:-70px;
+  left: 391px;
+  height: 100%;
+  position: absolute;
+  top: -70px;
   z-index: 1;
   opacity: 0;
-  background-color:transparent;
+  background-color: transparent;
 }
 
-.con1>h3{
+.con1>h3 {
   position: absolute;
-  top:450px;
+  top: 450px;
   font-weight: 700;
 }
 
-.con1 p{
+.con1 p {
   text-align: justify;
-  margin-left:0px;
+  margin-left: 0px;
   position: absolute;
-  top: 480px; 
+  top: 480px;
 }
 
-.con1:hover{
-cursor: pointer;
-background-color:transparent;
-transform: translateY(120px);
-opacity:1;
-z-index:1;
-transition:1s ease-out;
+.con1:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(120px);
+  opacity: 1;
+  z-index: 1;
+  transition: 1s ease-out;
 }
 
 /* 2nd One Ending */
@@ -1244,135 +1277,232 @@ transition:1s ease-out;
 /* 3rd One Startin */
 
 
-.car .pic1 img{
-  position:relative;
+.car .pic1 img {
+  position: relative;
   left: 25px;
   height: 450px;
-  z-index:-1;
+  z-index: -1;
 }
 
-.car .pic1 h2{
-  position:relative;
-  top:25px;
-  z-index:0;
+.car .pic1 h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
   color: white;
   font-weight: 100;
-  background-color:#09c372;
+  background-color: #09c372;
   width: fit-content;
   padding: 10px;
-  left:65px;
-  border-radius:50%;
+  left: 65px;
+  border-radius: 50%;
 }
 
 
-.con2{
+.con2 {
   width: 345px;
-  left:757px;
-  height:100%;
-  position:absolute;
-  top:-70px;
+  left: 757px;
+  height: 100%;
+  position: absolute;
+  top: -70px;
   z-index: 1;
   opacity: 0;
-  background-color:transparent;
+  background-color: transparent;
 }
 
 
-.con2>h3{
+.con2>h3 {
   position: absolute;
-  top:450px;
+  top: 450px;
 }
 
-.con2 p{
+.con2 p {
   text-align: justify;
-  margin-left:0px;
+  margin-left: 0px;
   position: absolute;
-  top: 480px; 
+  top: 480px;
 }
 
-.con2:hover{
-cursor: pointer;
-background-color:transparent;
-transform: translateY(120px);
-opacity:1;
-z-index:1;
-transition:1s ease-out;
+.con2:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(120px);
+  opacity: 1;
+  z-index: 1;
+  transition: 1s ease-out;
 }
 
 /* 3rd One Ending */
 
 /* 4th One Starting */
 
-.car .pic3 img{
-  position:relative;
+.car .pic3 img {
+  position: relative;
   left: 25px;
   height: 450px;
-  z-index:-1;
+  z-index: -1;
 }
 
-.car .pic3 h2{
-  position:relative;
-  top:25px;
-  z-index:0;
+.car .pic3 h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
   color: white;
   font-weight: 100;
-  background-color:#ff3860;
+  background-color: #ff3860;
   width: fit-content;
   padding: 10px;
-  left:65px;
-  border-radius:50%;
+  left: 65px;
+  border-radius: 50%;
 }
 
 
-.con3{
+.con3 {
   width: 345px;
-  left:1122px;
-  height:100%;
-  position:absolute;
-  top:-70px;
+  left: 1122px;
+  height: 100%;
+  position: absolute;
+  top: -70px;
   z-index: 1;
-  opacity:0;
-  background-color:transparent;
+  opacity: 0;
+  background-color: transparent;
 }
 
 
-.con3>h3{
+.con3>h3 {
   position: absolute;
-  top:450px;
+  top: 450px;
 }
 
-.con3 p{
+.con3 p {
   text-align: justify;
-  margin-left:0px;
+  margin-left: 0px;
   position: absolute;
-  top: 480px; 
+  top: 480px;
 }
 
-.con3:hover{
-cursor: pointer;
-background-color:transparent;
-transform: translateY(120px);
-opacity:1;
-z-index:1;
-transition:1s ease-out;
+.con3:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(120px);
+  opacity: 1;
+  z-index: 1;
+  transition: 1s ease-out;
 }
 
 /* 4th One Ending */
 /*Review Section Ending */
 
+/* Footer Section  Starting*/
+
+
+.last {
+  height: 560px;
+}
+
+.footer {
+  position: relative;
+  top: 0px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.footer img {
+  width: 100%;
+  height: 550px;
+
+}
+
+.ft {
+  position: absolute;
+  top: 3650px;
+  left: 50px;
+  bottom: 0;
+}
+
+.pis {
+  z-index: 0;
+  position: relative;
+  height: 450px;
+  left: 465px;
+  width: 845px;
+  display: flex;
+  gap: 20px;
+  top: -500px;
+}
+
+.pi1 {
+  flex-basis: 50%;
+  background: rgb(40, 39, 39);
+  border: 5px solid grey;
+}
+
+.pi2 {
+  flex-basis: 50%;
+  background: rgb(40, 39, 39);
+  border: 5px solid gray;
+}
+
+.pi1 h2,
+.pi2 h2 {
+  margin: 15px 25px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffa500;
+}
+
+.sp1 {
+  width: 100%;
+  display: inline-flex;
+  margin: 15px;
+  height: 100px;
+}
+
+.sp1 img {
+  width: 25%;
+  border-radius: 100% 0% 99% 1% / 30% 64% 36% 70%;
+}
+
+.sp1 p {
+  padding: 25px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.911);
+}
+
+.sp1 h5 {
+  margin-top: 90px;
+  position: relative;
+  text-align: start;
+  width: 250px;
+}
+
+/* Footer Section Ending */
+
+
+footer {
+  width: 100%;
+  bottom: 250px;
+  height: 40px;
+  top: -10px;
+  position: relative;
+}
+
+footer p {
+  font-size: large;
+  text-align: center;
+  padding-top: 15px;
+}
 
 /* Animation Effect starting */
-
-
-
 @keyframes loader {
-  0%{
+  0% {
     transform: scale(0);
     opacity: 0;
   }
-  50%{
+
+  50% {
     opacity: 1;
   }
-  100%{
+
+  100% {
     transform: scale(1);
     opacity: 0;
   }
@@ -1457,11 +1587,11 @@ transition:1s ease-out;
   }
 
   .container {
-    width:58%;
+    width: 58%;
   }
 
   .container img {
-    width: 112vw;
+    width: 113.5vw;
     background-size: contain;
     height: 700px;
 
@@ -1526,7 +1656,7 @@ transition:1s ease-out;
   }
 
   .mark {
-    width: 112vw;
+    width: 113.5%;
     position: relative;
   }
 
@@ -1555,9 +1685,9 @@ transition:1s ease-out;
     top: 150px;
     display: inline-block;
     box-sizing: border-box;
-    height:150%;
-    left:50px;
-    width:80%;
+    height: 150%;
+    left: 50px;
+    width: 80%;
   }
 
   .gallery>div {
@@ -1605,7 +1735,7 @@ transition:1s ease-out;
   .second,
   .third,
   .fourth {
-    height:350px;
+    height: 350px;
   }
 
   .first h1 {
@@ -1725,185 +1855,271 @@ transition:1s ease-out;
   /* End of List of GameType Section */
 
   /*Cards Design Starting*/
-  .gam img{
-display: none;
+  .gam img {
+    display: none;
   }
-  .word{
+
+  .word {
     position: relative;
-    top:450px;
+    top: 450px;
   }
-  .word h1{
+
+  .word h1 {
     margin-left: -5px;
   }
-  .word p{
+
+  .word p {
     margin-top: -2px;
     margin-left: 110px;
   }
-.cards{
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  top:-450px;
-  position: relative;
-}
 
-.cards.show{
-  position: relative;
-  top: 250px;
-}
-
-.card1,.card2,.card3{
-  top: 70px;  
-  background-color: white;
-  width: 80%;
-  position: relative;
-  border: 5px solid black;
-  left:60px;
-  margin-bottom: 25px;
-}
-
-.img1 img{
-  height: 200px;
-width: 100%;
-background-position-x: left;
-}
-
-
-.emj{
-  display: none;
-}
-.thor{
-  position: relative;
-  top:350px;
-  width: 100%;
-  object-fit: fill;
-}
-.tits,.tit2{
-  display: inline-block;
-  position: absolute;
-  top: 133px;
-  left: 0px;
-  width: 90%;
-  height: 90%;
-}
-.im{
-width:100%;
-height:1200px;
-}
-.im img{
-  width:112vw;
-  position: absolute;
-  height:1200px;
-}
-
-
-.tit h1{
-  font-size:small;
-  width: 29%;
-  position:absolute;
-  left: 38px;
-}
-.tit p{
-  font-size: small;
-  width:50%;
-  position: absolute;
-  z-index:0;
-  color: black;
-  top:135px;
-  background-color: white;
-  left:38px;
-}
-
-.tits{
-  left:38px;
-  height: 470px;
-}
-.tex{
-  position:relative;
-  top: -65px;  
-}
-.img3 img{
-  width:100%;
-}
-.tit2{
-  position: absolute;
-  top: 550px;
-  left: 25px;
-}
-  
-  .tit2 h1{
-    font-size:small;
-    width:32%;
-    position:absolute;
-    left:13px;
+  .cards {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: -450px;
+    position: relative;
   }
-  .tit2 p{
-    font-size: small;
-    width:60%;
-    position: absolute;
-    z-index:0;
-    color: black;
-    top:135px;
+
+  .cards.show {
+    position: relative;
+    top: 250px;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    top: 70px;
     background-color: white;
-    left:18px;
+    width: 80%;
+    position: relative;
+    border: 5px solid black;
+    left: 60px;
+    margin-bottom: 25px;
   }
 
-  .tits1{
-    position:relative;
-    left:38px;
+  .img1 img {
+    height: 200px;
+    width: 100%;
+    background-position-x: left;
+  }
+
+
+  .emj {
+    display: none;
+  }
+
+  .thor {
+    position: relative;
+    top: 350px;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .tits,
+  .tit2 {
+    display: inline-block;
+    position: absolute;
+    top: 133px;
+    left: 0px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .im {
+    width: 112%;
+    height: 1200px;
+  }
+
+  .im img {
+    width: 113.5%;
+    position: absolute;
+    height: 1200px;
+  }
+
+
+  .tit h1 {
+    font-size: small;
+    width: 29%;
+    position: absolute;
+    left: 38px;
+  }
+
+  .tit p {
+    font-size: small;
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+    color: black;
+    top: 135px;
+    background-color: white;
+    left: 38px;
+  }
+
+  .tits {
+    left: 38px;
+    height: 470px;
+  }
+
+  .tex {
+    position: relative;
+    top: -65px;
+  }
+
+  .img3 img {
+    width: 100%;
+  }
+
+  .tit2 {
+    position: absolute;
+    top: 550px;
+    left: 25px;
+  }
+
+  .tit2 h1 {
+    font-size: small;
+    width: 32%;
+    position: absolute;
+    left: 13px;
+  }
+
+  .tit2 p {
+    font-size: small;
+    width: 60%;
+    position: absolute;
+    z-index: 0;
+    color: black;
+    top: 135px;
+    background-color: white;
+    left: 18px;
+  }
+
+  .tits1 {
+    position: relative;
+    left: 38px;
     top: -519px;
-    height:470px;
+    height: 470px;
     width: 90%;
   }
-  .tex1{
+
+  .tex1 {
     width: 100%;
     position: absolute;
   }
-  .tex1 h2{
+
+  .tex1 h2 {
     width: 250px;
     position: relative;
     top: 220px;
-    left:0px;
-  }
-  
-  .tex1 p{
-    width: 250px;
-    position: relative;
-    top: 220px;
-    left:0px;
-    text-align:justify;
+    left: 0px;
   }
 
-  /*Card design Ending */ 
+  .tex1 p {
+    width: 250px;
+    position: relative;
+    top: 220px;
+    left: 0px;
+    text-align: justify;
+  }
+
+  /*Card design Ending */
 
   /*Review Section Starting */
-  .gm{
+  .gm {
     position: relative;
     top: 1250px;
   }
-  .gm img{
+
+  .gm img {
     display: none;
   }
-  .wor{
+
+  .wor {
     position: relative;
     top: 550px;
   }
-  .wor p{
+
+  .wor p {
     position: relative;
-    left:25px;
+    left: 25px;
   }
 
-  .car{
+  .car {
     display: inline-block;
     position: relative;
     top: 1220px;
-    left:45px;
-    
+    left: 45px;
     width: 80%;
+    margin-bottom:55px;
+    height: 280%;
     overflow: hidden;
   }
 
-  .con,.con1,.con2,.con3{
+  
+#h3{
+  display: block;
+  text-align: center;
+}
+  
+
+  /*Footer Section Starting*/
+
+  .last {
+    position: relative;
+    display: block;
+    width: 113%;
+    top: 2650px;
+    height: 100%;
+    background-image: radial-gradient(circle, #e89d23, #e3714b, #c15566, #8c496f, #544060, #4c4b65, #4b5464, #535a60, #798185, #a3a9ab, #cfd3d4, #fdffff);
+    left:1px;
+  }
+
+  .footer img {
     display: none;
+  }
+
+  .ft {
+    display: none;
+  }
+
+  .pi1,
+  .pi2 {
+    display: block;
+  }
+
+
+  .pis {
+    position: relative;
+    width: 100vw;
+    display: block;
+    border: 5px solid grey;
+    left:25px;
+  }
+
+  .pi1 {
+    position: relative;
+    width: 100%;
+    
+    text-align:center;
+  }
+
+  .pi1 h5,
+  .pi2 h5 {
+    display: none;
+  }
+
+  .pi2 {
+    
+    text-align:justify;
+    position: relative;
+    width: 100%;
+    top: 50px;
+  }
+
+  footer{
+    position: relative;
+    top:2650px;
+    height:70px;
+    width: 113.5%;
   }
 }
