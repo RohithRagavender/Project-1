@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+  }
+  
+  .loader:before,
+  .loader:after {
+    content: '';
+    border: 1em solid #ffa500;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left:25px;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+  }
+  
+  .loader:before {
+    animation-delay: 0.3s;
+  }
+  
+span{
+    color: #ffa500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+/* Navigation Section  Starting */
+header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 0 20px;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    height: 70px;
+    border-bottom: 3px solid gold;
+  }
+  
+  .logo img {
+    position: absolute;
+    left: 150px;
+    top: 20px;
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #brand a {
+    color: #09c372;
+    width: 50px;
+  }
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  ul a {
+    color: white;
+  }
+  
+  ul li {
+  
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: red;
+    border-radius: 5px;
+  }
+  
+  #login,
+  #signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+  }
+  
+  #login {
+    border: 1px solid #498afb;
+  }
+  
+  #signup {
+    border: 1px solid #ff3860;
+  }
+  
+  #signup a {
+    color: #ff3860;
+  }
+  
+  #login a {
+    color: #498afb;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    background-color: gold;
+    justify-content: flex-start;
+    transition: 2s ease-in;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+  }
+
+  /*Navigation Section Ending */
+
+  
+/*Marquee Section Starting */
+.mark {
+    background: black;
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
+    color: red;
+    position: relative;
+    top: 67px;
+  }
+  
+  .top {
+    text-align: center;
+    width: 30%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    background-color: #ffa500;
+  }
+  
+  .top p {
+    margin-left: 200px;
+    padding-top: 25px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .marq {
+    width: 69.2%;
+    left: 30%;
+    top: 15px;
+    position: relative;
+  }
+  
+  .conq p {
+    display: inline-flex;
+    margin-left: 40px;
+    color: aliceblue;
+  }
+  
+  .p {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ff3860;
+  }
+  
+  .p1 {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: violet;
+  }
+  
+  .p2 {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #09c372;
+  }
+  
+  /* Marquee Section Ending */
+
+  /* First Image Section Starting */
+  .container {
+    width: 100%;
+    height:500px;
+    position: relative;
+    overflow: hidden;
+    top:-135px;
+  }
+  
+  .container img {
+    width: 100%;
+    height:500px;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .para {
+    width: 50%;
+    padding: 50px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+  
+  .content h1 {
+    line-height: 50px;
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .content p {
+    margin-top: 25px;
+    margin-left: 10px;
+    color: whitesmoke;
+    /*  font-size: clamp(1.5rem,5vw,1rem);*/
+  }
+  
+  
+  .container {
+    opacity: 1;
+    padding-top: 0px;
+    transform: translateY(200px);
+    transition: opacity 5s;
+  }
+  
+  .container.content {
+    opacity: 5;
+    transform: translateY(0);
+    transform: 5s;
+  }
+  
+  
+  .container p {
+    opacity: 1;
+    line-height: 45px;
+    transform: translateY(10);
+    transform: 5s;
+  }
+
+  .para {
+    animation: slide 5s;
+  }
+  
+  .content2 {
+    animation: slides 5s;
+  }
+  /*First Section Ending */
+  
+
+/* Animation Effect Starting */
+@keyframes loader {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+
+  
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(-190%);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slides {
+    0% {
+      opacity: 0;
+      transform: translateX(-150%);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+/* Animation Effect Ending */
+
+  @media only Screen and (max-width:600px) {
+   
+  /* Navigation section Starting */
+
+  header {
+    background-color: black;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .logo img {
+    width: 39%;
+    top: 20px;
+    left: 10px;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  #hr {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    z-index: 1;
+    margin-right: -10px;
+  }
+
+  .mobile-menu {
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+
+  .mobile-menu li a {
+    color: black;
+  }
+
+  .container {
+    width:113.5%;
+    height: 600px;
+  }
+
+  .container img {
+    width: 113%;
+    background-size: contain;
+    height:600px;
+
+  }
+
+  .content {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    left: -70px;
+    margin: 5px;
+  }
+
+  .para {
+    padding: 70px;
+    position: absolute;
+    top: -5%;
+  }
+
+  .content h1 {
+    line-height: 50px;
+    position: relative;
+    left: -25px;
+    font-size: xx-large;
+    color: white;
+    padding-left: 25px;
+  }
+
+  .content p {
+    margin-top: 25px;
+    line-height: 35px;
+    position: relative;
+    left: -4px;
+    color: whitesmoke;
+  }
+
+  /* Navigation Section Ending */
+
+  /*Marquee Section */
+  .top {
+    display: none;
+  }
+
+  .mark {
+    width: 113.5%;
+    position: relative;
+  }
+
+  .marq {
+    top: 15px;
+    left: -10px;
+    width: 100%;
+  }
+
+  /*Marquee Section */
+
+  }

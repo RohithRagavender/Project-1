@@ -3,6 +3,8 @@ setTimeout(function(){
   $('.loader_bg').fadeToggle();
 },800);
 
+
+
 /* Page Loader Function */
 
 /* navigation function */
