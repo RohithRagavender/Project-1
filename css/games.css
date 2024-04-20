@@ -1208,7 +1208,7 @@ height: 60px;
   position: relative;
   text-align: center;
   right: 25px;
-  top: -550px;
+  top: -520px;
   font-weight: 500;
   color:#fff;
   font-size: xx-large;
@@ -1483,7 +1483,7 @@ height: 60px;
 
 .footer {
   position: relative;
-  top: 0px;
+  top:40px;
   height: 550px;
   overflow: hidden;
 }
@@ -1509,7 +1509,7 @@ height: 60px;
   width: 845px;
   display: flex;
   gap: 20px;
-  top: -500px;
+  top: -450px;
 }
 
 .pi1 {
@@ -1563,7 +1563,7 @@ footer {
   width: 100%;
   bottom: 250px;
   height: 40px;
-  top: -10px;
+  top:15px;
   position: relative;
 }
 
@@ -1905,7 +1905,7 @@ footer p {
 
 footer{
   position: relative;
-  top:2650px;
+  top:2700px;
   height:70px;
   width: 113.5%;
 }
