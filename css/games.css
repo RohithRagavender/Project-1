@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
+
 .loader_bg {
     position: fixed;
     z-index: 999999;
@@ -44,7 +45,9 @@ span{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   list-style: none;
   text-decoration: none;
 }
@@ -229,7 +232,7 @@ header a {
   /* First Image Section Starting */
   .container {
     width: 100%;
-    height:500px;
+    height:600px;
     position: relative;
     overflow: hidden;
     top:-135px;
@@ -237,7 +240,7 @@ header a {
   
   .container img {
     width: 100%;
-    height:500px;
+    height:600px;
     position: relative;
     object-fit: cover;
   }
@@ -294,6 +297,1284 @@ header a {
   }
   /*First Section Ending */
   
+
+
+/* Game section Starting */
+
+/*
+.car .pic h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
+  color: white;
+  font-weight: 100;
+  background-color:#9dc6f4;
+  width: fit-content;
+  padding: 10px;
+  left: 125px;
+  border-radius: 50%;
+}
+*/
+.car {
+
+  position: relative;
+  top:100px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  top:65.5px;
+  background-image: url("../src/gamespic/wallpaper.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  height: 220vh;
+  gap:300px;
+}
+
+.car {
+  opacity: 0;
+  padding-top: 0px;
+  transform: translateY(300px);
+  transition: opacity 3s;
+}
+
+.car.show {
+  opacity: 1;
+  transform: translateY(0);
+  transform: 2s;
+}
+/*
+.car .pic img {
+  position: relative;
+  left: 155px;
+  height: 450px;
+  border-radius: 15px;
+  width:500px;
+  height: 400px;
+  z-index: -1;
+}
+
+
+#h2{
+  display: block;
+  position: relative;
+  left: 300px;
+}
+#h3{
+  display:block;
+  position: relative;
+  left: 280px;
+}
+
+
+/*2nd one Starting*
+.car .pic2 img {
+  position: relative;
+  left:105px;
+  height: 450px;
+  border-radius:15px;
+  z-index: -1;
+  width: 500px;
+  height: 400px;
+}
+
+.car .pic2 h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
+  color: white;
+  font-weight: 100;
+  background-color: purple;
+  width: fit-content;
+  padding: 10px;
+  left: 75px;
+  border-radius: 50%;
+}
+
+/* 2nd One Ending */
+
+
+/* 3nd One Starting *
+#h1{
+  position: relative;
+  left: 250px;
+  top:-170px;
+}
+.car .pic1 img {
+  position: relative;
+  top: -180px;
+  width: 500px;
+  left: 155px;
+  height: 400px;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.car .pic1 h2 {
+  position: relative;
+  top:-150px;
+  z-index: 0;
+  color:black;
+  font-weight: 100;
+  background-color: #9dc6f4;
+  width: fit-content;
+  padding: 10px;
+  left: 125px;
+  border-radius: 50%;
+}
+/* 3nd One Ending */
+
+
+/* 4th one Starting *
+
+#h4{
+  position: relative;
+  left: 250px;
+  top:-170px;
+}
+.car .pic3 img {
+  position: relative;
+  top: -180px;
+  width: 500px;
+  left: 155px;
+  height: 400px;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.car .pic3 h2 {
+  position: relative;
+  top:-150px;
+  z-index: 0;
+  color:black;
+  font-weight: 100;
+  background-color:#ffa500;
+  width: fit-content;
+  padding: 10px;
+  left: 125px;
+  border-radius: 50%;
+}
+
+
+/* 4th one Ending */
+
+/* Game one Starting */
+
+.card {
+  width: 510px;
+  height: 450px;
+  position: relative;
+  left: 150px;
+  top:50px;
+  background-image: url("../src/gamespic/watchdog.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  border-radius:5%;
+}
+
+.GameIcon {
+  transform: translate(-80px,-50px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: 0.3s;
+}
+
+.GameImg {
+  width: 100%;
+  height: 100%;
+}
+
+.Gfooter {
+  width: 100%;
+  height: 0%;
+  background-color: #262626;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.Name {
+  transform: translate(10px,200px);
+  position: absolute;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  color:#ffa500;
+}
+
+.SmallIcon {
+  width: 0px;
+  height: 0px;
+  transform: translate(10px,10px);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ff5858;
+  transition: 0.2s;
+}
+
+.SmallIcon img{
+width:80px;
+height:80px;
+}
+
+.Descripion {
+  padding: 10px;
+  position: absolute;
+  transform: translate(0px,20px);
+  opacity: 0%;
+  color: #ff5858;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.Descripion a{
+  color: #ebd300;
+  text-decoration: none;
+
+}
+.StarIcon {
+  transform: translate(-0px,25px);
+  width: 20px;
+  fill: #ebd300;
+}
+
+.Stars {
+  position: absolute;
+  color:#ebd300;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translate(80px,-70px);
+}
+
+.GameImg:hover .Descripion {
+  opacity: 100%;
+}
+
+.GameImg:hover .Gfooter {
+  width: 100%;
+  height: 100%;
+}
+
+.GameImg:hover .SmallIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.GameImg:hover .Name {
+  transform: translate(75px,-435px);
+}
+
+.GameImg:hover .GameIcon {
+  transform: translate(400px,-160px);
+}
+
+/* Game one  ending */
+
+
+
+/* Game Two Starting */
+
+.card1 {
+  width: 510px;
+  height: 450px;
+  position: relative;
+  left: 50px;
+  top:50px;
+  background-image: url("../src/gamespic/Doom.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  border-radius:5%;
+}
+
+.GameIcon {
+  transform: translate(-80px,-50px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: 0.3s;
+}
+
+.GameImg {
+  width: 100%;
+  height: 100%;
+}
+
+.Gfooter {
+  width: 100%;
+  height: 0%;
+  background-color: #262626;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.Name {
+  transform: translate(10px,200px);
+  position: absolute;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  color:#ffa500;
+  display: none;
+}
+
+.SmallIcon {
+  width: 0px;
+  height: 0px;
+  transform: translate(10px,10px);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ff5858;
+  transition: 0.2s;
+}
+
+.SmallIcon img{
+width:60px;
+height: 60px;
+}
+
+.Descripion {
+  padding: 10px;
+  position: absolute;
+  transform: translate(0px,20px);
+  opacity: 0%;
+  color: #ff5858;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.Descripion a{
+  color: #ebd300;
+  text-decoration: none;
+
+}
+.StarIcon {
+  transform: translate(-0px,25px);
+  width: 20px;
+  fill: #ebd300;
+}
+
+.Stars {
+  position: absolute;
+  color:#ff3860;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translate(80px,-70px);
+}
+
+.GameImg:hover .Descripion {
+  opacity: 100%;
+}
+
+.GameImg:hover .Gfooter {
+  width: 100%;
+  height: 100%;
+}
+
+.GameImg:hover .SmallIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.GameImg:hover .Name {
+  display: block;
+  transform: translate(75px,-435px);
+}
+
+.GameImg:hover .GameIcon {
+  transform: translate(400px,-160px);
+}
+
+
+/* Game two Ending */
+
+
+/* Game Three Starting */
+
+
+.card2 {
+  width: 510px;
+  height: 450px;
+  position: relative;
+  left:150px;
+  overflow: hidden;
+  top:-200px;
+  background-image: url("../src/gamespic/Avatar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -80px;
+  border-radius:5%;
+}
+
+.GameIcon {
+  transform: translate(-80px,-50px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: 0.3s;
+}
+
+.GameImg {
+  width: 100%;
+  height: 100%;
+}
+
+.Gfooter {
+  width: 100%;
+  height: 0%;
+  background-color: #262626;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.Name {
+  transform: translate(10px,200px);
+  position: absolute;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  color:#ffa500;
+  display: none;
+}
+
+.SmallIcon {
+  width: 0px;
+  height: 0px;
+  transform: translate(10px,10px);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ff5858;
+  transition: 0.2s;
+}
+
+.SmallIcon img{
+width:60px;
+height: 60px;
+}
+
+.Descripion {
+  padding: 10px;
+  position: absolute;
+  transform: translate(0px,20px);
+  opacity: 0%;
+  color: #ff5858;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.Descripion a{
+  color: #ebd300;
+  text-decoration: none;
+
+}
+.StarIcon {
+  transform: translate(-0px,25px);
+  width: 20px;
+  fill: #ebd300;
+}
+
+.Stars {
+  position: absolute;
+  color:#ff3860;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translate(80px,-70px);
+}
+
+.GameImg:hover .Descripion {
+  opacity: 100%;
+}
+
+.GameImg:hover .Gfooter {
+  width: 100%;
+  height: 100%;
+}
+
+.GameImg:hover .SmallIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.GameImg:hover .Name {
+  display: block;
+  transform: translate(75px,-435px);
+}
+
+.GameImg:hover .GameIcon {
+  transform: translate(400px,-160px);
+}
+
+/* Game Three Ending */
+
+
+
+/* Game Four Starting */
+.card3 {
+  width: 510px;
+  height: 450px;
+  position: relative;
+  left:50px;
+  top:-200px;
+  background-image: url("../src/gamespic/prince\ of\ persia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:-55px;
+  overflow: hidden;
+  border-radius:5%;
+}
+
+.GameIcon {
+  transform: translate(-80px,-50px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: 0.3s;
+}
+
+.GameImg {
+  width: 100%;
+  height: 100%;
+}
+
+.Gfooter {
+  width: 100%;
+  height: 0%;
+  background-color: #262626;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.Name {
+  transform: translate(10px,200px);
+  position: absolute;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  color:#ffa500;
+  display: none;
+}
+
+.SmallIcon {
+  width: 0px;
+  height: 0px;
+  transform: translate(10px,10px);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ff5858;
+  transition: 0.2s;
+}
+
+.SmallIcon img{
+width:60px;
+height: 60px;
+}
+
+.Descripion {
+  padding: 10px;
+  text-align: justify;
+  position: absolute;
+  transform: translate(0px,20px);
+  opacity: 0%;
+  color: #ff5858;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.Descripion a{
+  color: #ebd300;
+  text-decoration: none;
+
+}
+.StarIcon {
+  transform: translate(-0px,25px);
+  width: 20px;
+  fill: #ebd300;
+}
+
+.Stars {
+  position: absolute;
+  color:#ff3860;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translate(80px,-70px);
+}
+
+.GameImg:hover .Descripion {
+  opacity: 100%;
+}
+
+.GameImg:hover .Gfooter {
+  width: 100%;
+  height: 100%;
+}
+
+.GameImg:hover .SmallIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.GameImg:hover .Name {
+  display: block;
+  transform: translate(75px,-435px);
+}
+
+.GameImg:hover .GameIcon {
+  transform: translate(400px,-160px);
+}
+
+/* Game Four Ending */
+
+/* Game Five Starting */
+
+.card4 {
+  width: 510px;
+  height: 450px;
+  position: relative;
+  left:150px;
+  top:-450px;
+  background-image: url("../src/gamespic/spiderman.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -85px;
+  overflow: hidden;
+  border-radius:5%;
+}
+
+.GameIcon {
+  transform: translate(-80px,-50px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: 0.3s;
+}
+
+.GameImg {
+  width: 100%;
+  height: 100%;
+}
+
+.Gfooter {
+  width: 100%;
+  height: 0%;
+  background-color: #262626;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.Name {
+  transform: translate(10px,200px);
+  position: absolute;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  color:#ffa500;
+  display: none;
+}
+
+.SmallIcon {
+  width: 0px;
+  height: 0px;
+  transform: translate(10px,10px);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ff5858;
+  transition: 0.2s;
+}
+
+.SmallIcon img{
+width:60px;
+height: 60px;
+}
+
+.Descripion {
+  padding: 10px;
+  position: absolute;
+  transform: translate(0px,20px);
+  opacity: 0%;
+  color: #ff5858;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.Descripion a{
+  color: #ebd300;
+  text-decoration: none;
+
+}
+.StarIcon {
+  transform: translate(-0px,25px);
+  width: 20px;
+  fill: #ebd300;
+}
+
+.Stars {
+  position: absolute;
+  color:#ff3860;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translate(80px,-70px);
+}
+
+.GameImg:hover .Descripion {
+  opacity: 100%;
+}
+
+.GameImg:hover .Gfooter {
+  width: 100%;
+  height: 100%;
+}
+
+.GameImg:hover .SmallIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.GameImg:hover .Name {
+  display: block;
+  transform: translate(75px,-435px);
+}
+
+.GameImg:hover .GameIcon {
+  transform: translate(400px,-160px);
+}
+
+/* Game Five Ending */
+
+
+/* Game Six Starting */
+.card5 {
+  width: 510px;
+  height: 450px;
+  position: relative;
+  left:50px;
+  top:-450px;
+  background-image: url("../src/gamespic/cyberpunks.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:-55px;
+  overflow: hidden;
+  border-radius:5%;
+}
+
+.GameIcon {
+  transform: translate(-80px,-50px);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: 0.3s;
+}
+
+.GameImg {
+  width: 100%;
+  height: 100%;
+}
+
+.Gfooter {
+  width: 100%;
+  height: 0%;
+  background-color: #262626;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.Name {
+  transform: translate(10px,200px);
+  position: absolute;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  color:#ffa500;
+  display: none;
+}
+
+.SmallIcon {
+  width: 0px;
+  height: 0px;
+  transform: translate(10px,10px);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ff5858;
+  transition: 0.2s;
+}
+
+.SmallIcon img{
+width:60px;
+height: 60px;
+}
+
+.Descripion {
+  padding: 10px;
+  position: absolute;
+  transform: translate(0px,20px);
+  opacity: 0%;
+  color: #ff5858;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.Descripion a{
+  color: #ebd300;
+  text-decoration: none;
+
+}
+.StarIcon {
+  transform: translate(-0px,25px);
+  width: 20px;
+  fill: #ebd300;
+}
+
+.Stars {
+  position: absolute;
+  color:#ff3860;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translate(80px,-70px);
+}
+
+.GameImg:hover .Descripion {
+  opacity: 100%;
+}
+
+.GameImg:hover .Gfooter {
+  width: 100%;
+  height: 100%;
+}
+
+.GameImg:hover .SmallIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.GameImg:hover .Name {
+  display: block;
+  transform: translate(75px,-435px);
+}
+
+.GameImg:hover .GameIcon {
+  transform: translate(400px,-160px);
+}
+
+
+/* Game Six Ending */
+
+/* Game Section Ending */
+
+
+/* Review Section Starting */
+
+.las {
+  width: 100%;
+  height: 870px;
+  position: relative;
+}
+
+.gm img {
+  width: 100%;
+  position: relative;
+  top:65px;
+  z-index: -1;
+  object-fit: fill;
+  height: 650px;
+}
+
+.wor h1 {
+  position: relative;
+  background-color: #ff3860;
+  text-align: center;
+  left: 45%;
+  color: white;
+  font-size: medium;
+  padding: 5px;
+  top: -550px;
+  width: 80px;
+}
+
+
+.wor p {
+  position: relative;
+  text-align: center;
+  right: 25px;
+  top: -550px;
+  font-weight: 500;
+  color:#fff;
+  font-size: xx-large;
+  padding: 5px;
+}
+
+.cars .pic h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
+  color: white;
+  font-weight: 100;
+  background-color: #ffa500;
+  width: fit-content;
+  padding: 10px;
+  left: 65px;
+  border-radius: 50%;
+}
+
+.cars {
+
+  position: relative;
+  top: -512px;
+  display: flex;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 20px;
+}
+
+.cars {
+  opacity: 0;
+  padding-top: 0px;
+  transform: translateY(300px);
+  transition: opacity 3s;
+}
+
+.cars.show {
+  opacity: 1;
+  transform: translateY(0);
+  transform: 2s;
+}
+
+.cars .pic img {
+  position: relative;
+  left: 25px;
+  height: 450px;
+  z-index: -1;
+}
+
+#h3{
+  display: none;
+}
+
+.con {
+  width: 345px;
+  left: 25px;
+  height: 100%;
+  position: absolute;
+  top: -65px;
+  z-index: 1;
+  opacity: 0;
+  background-color: transparent;
+}
+
+.con>h3 {
+  position: absolute;
+  top: 450px;
+}
+
+.con p {
+  text-align: justify;
+  margin-left: 0px;
+  position: absolute;
+  top: 480px;
+}
+
+.con:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(120px);
+  opacity: 1;
+  z-index: 1;
+  transition: 1s ease-out;
+}
+
+/*2nd one Starting*/
+
+
+
+.cars .pic2 img {
+  position: relative;
+  left: 25px;
+  height: 450px;
+  z-index: -1;
+}
+
+.cars .pic2 h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
+  color: white;
+  font-weight: 100;
+  background-color: purple;
+  width: fit-content;
+  padding: 10px;
+  left: 65px;
+  border-radius: 50%;
+}
+
+
+.con1 {
+  width: 345px;
+  left: 391px;
+  height: 100%;
+  position: absolute;
+  top: -70px;
+  z-index: 1;
+  opacity: 0;
+  background-color: transparent;
+}
+
+.con1>h3 {
+  position: absolute;
+  top: 450px;
+  font-weight: 700;
+}
+
+.con1 p {
+  text-align: justify;
+  margin-left: 0px;
+  position: absolute;
+  top: 480px;
+}
+
+.con1:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(120px);
+  opacity: 1;
+  z-index: 1;
+  transition: 1s ease-out;
+}
+
+/* 2nd One Ending */
+
+/* 3rd One Startin */
+
+
+.cars .pic1 img {
+  position: relative;
+  left: 25px;
+  height: 450px;
+  z-index: -1;
+}
+
+.cars .pic1 h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
+  color: white;
+  font-weight: 100;
+  background-color: #09c372;
+  width: fit-content;
+  padding: 10px;
+  left: 65px;
+  border-radius: 50%;
+}
+
+
+.con2 {
+  width: 345px;
+  left: 757px;
+  height: 100%;
+  position: absolute;
+  top: -70px;
+  z-index: 1;
+  opacity: 0;
+  background-color: transparent;
+}
+
+
+.con2>h3 {
+  position: absolute;
+  top: 450px;
+}
+
+.con2 p {
+  text-align: justify;
+  margin-left: 0px;
+  position: absolute;
+  top: 480px;
+}
+
+.con2:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(120px);
+  opacity: 1;
+  z-index: 1;
+  transition: 1s ease-out;
+}
+
+/* 3rd One Ending */
+
+/* 4th One Starting */
+
+.cars .pic3 img {
+  position: relative;
+  left: 25px;
+  height: 450px;
+  z-index: -1;
+}
+
+.cars .pic3 h2 {
+  position: relative;
+  top: 25px;
+  z-index: 0;
+  color: white;
+  font-weight: 100;
+  background-color: #ff3860;
+  width: fit-content;
+  padding: 10px;
+  left: 65px;
+  border-radius: 50%;
+}
+
+
+.con3 {
+  width: 345px;
+  left: 1122px;
+  height: 100%;
+  position: absolute;
+  top: -70px;
+  z-index: 1;
+  opacity: 0;
+  background-color: transparent;
+}
+
+
+.con3>h3 {
+  position: absolute;
+  top: 450px;
+}
+
+.con3 p {
+  text-align: justify;
+  margin-left: 0px;
+  position: absolute;
+  top: 480px;
+}
+
+.con3:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(120px);
+  opacity: 1;
+  z-index: 1;
+  transition: 1s ease-out;
+}
+
+/* 4th One Ending */
+/*Review Section Ending */
+
+
+/* Footer Section  Starting*/
+
+
+.last {
+  height: 560px;
+}
+
+.footer {
+  position: relative;
+  top: 0px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.footer img {
+  width: 100%;
+  height: 550px;
+
+}
+
+.ft {
+  position: absolute;
+  top: 3150px;
+  left: 50px;
+  bottom: 0;
+}
+
+.pis {
+  z-index: 0;
+  position: relative;
+  height: 450px;
+  left: 465px;
+  width: 845px;
+  display: flex;
+  gap: 20px;
+  top: -500px;
+}
+
+.pi1 {
+  flex-basis: 50%;
+  background: rgb(40, 39, 39);
+  border: 5px solid grey;
+}
+
+.pi2 {
+  flex-basis: 50%;
+  background: rgb(40, 39, 39);
+  border: 5px solid gray;
+}
+
+.pi1 h2,
+.pi2 h2 {
+  margin: 15px 25px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffa500;
+}
+
+.sp1 {
+  width: 100%;
+  display: inline-flex;
+  margin: 15px;
+  height: 100px;
+}
+
+.sp1 img {
+  width: 25%;
+  border-radius: 100% 0% 99% 1% / 30% 64% 36% 70%;
+}
+
+.sp1 p {
+  padding: 25px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.911);
+}
+
+.sp1 h5 {
+  margin-top: 90px;
+  position: relative;
+  text-align: start;
+  width: 250px;
+}
+
+/* Footer Section Ending */
+
+
+footer {
+  width: 100%;
+  bottom: 250px;
+  height: 40px;
+  top: -10px;
+  position: relative;
+}
+
+footer p {
+  font-size: large;
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+
 
 /* Animation Effect Starting */
 @keyframes loader {
@@ -448,5 +1729,185 @@ header a {
   }
 
   /*Marquee Section */
+
+  /* Game Section */
+ .car {
+  display: block;
+  width: 100%;
+  background-image: url("../src/gamespic/wallpaper.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ } 
+ .card{
+  width:100%;
+  height: 520px;
+  position: relative;
+  left:25px;
+  background-position-x: -150px;
+ }
+
+
+ .GameImg:hover .GameIcon {
+  display: none;
+}
+
+.GameImg:hover .Name {
+  display: block;
+  transform: translate(75px,-510px);
+}
+
+
+ .card1{ 
+  width:100%;
+  height: 520px;
+  top: 100px;
+  background-position-x: -65px;
+  position: relative;
+  left: 25px;
+ }
+
+ .card2{
+  width:100%;
+  height: 520px;
+  top: 150px;
+  background-position-x: -65px;
+  position: relative;
+  left: 25px; 
+  background-position-x:-185px;
+ }
+
+ .card3{
+  width:100%;
+  height: 520px;
+  top:200px;
+  background-position-x: -65px;
+  position: relative;
+  left: 25px;
+ 
+ }
+
+ .card4{
+  width:100%;
+  height: 520px;
+  top:200px;
+  background-position-x: -65px;
+  position: relative;
+  left: 25px;
+ 
+ }
+
+ .card5{
+  width:100%;
+  height: 520px;
+  object-fit: fill;
+  top:250px;
+  background-position-y: top;
+  position: relative;
+  left: 25px;
+ 
+ }
+
+ 
+  /*Review Section Starting */
+  .gm {
+    position: relative;
+    top: 1850px;
+  }
+
+  .gm img {
+    display: none;
+  }
+
+  .wor {
+    position: relative;
+    top: 550px;
+  }
+
+  .wor p {
+    position: relative;
+    left: 25px;
+    color: black;
+  }
+
+  .cars {
+    display: inline-block;
+    position: relative;
+    top: 1920px;
+    left: 45px;
+    width: 80%;
+    margin-bottom:55px;
+    height: 280%;
+    overflow: hidden;
+  }
+
+  
+#h3{
+  display: block;
+  text-align: center;
+}
+
+.con,.con1,.con2,.con3{
+  display: none;
+}
+  
+
+.last {
+  position: relative;
+  display: block;
+  width: 113%;
+  top: 2665px;
+  height: 100%;
+  background-image: radial-gradient(circle, #e89d23, #e3714b, #c15566, #8c496f, #544060, #4c4b65, #4b5464, #535a60, #798185, #a3a9ab, #cfd3d4, #fdffff);
+  left:1px;
+}
+
+.footer img {
+  display: none;
+}
+
+.ft {
+  display: none;
+}
+
+.pi1,
+.pi2 {
+  display: block;
+}
+
+
+.pis {
+  position: relative;
+  width: 100vw;
+  display: block;
+  border: 5px solid grey;
+  left:25px;
+}
+
+.pi1 {
+  position: relative;
+  width: 100%;
+  
+  text-align:center;
+}
+
+.pi1 h5,
+.pi2 h5 {
+  display: none;
+}
+
+.pi2 {
+  
+  text-align:justify;
+  position: relative;
+  width: 100%;
+  top: 50px;
+}
+
+footer{
+  position: relative;
+  top:2650px;
+  height:70px;
+  width: 113.5%;
+}
 
   }

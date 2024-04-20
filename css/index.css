@@ -41,7 +41,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   list-style: none;
   text-decoration: none;
 }
@@ -594,6 +596,7 @@ button:hover .fourth {
   color: aqua;
   position: relative;
   top: 75px;
+  text-align: justify;
 }
 
 .second h1 {
@@ -620,6 +623,7 @@ button:hover .fourth {
   color: blanchedalmond;
   position: relative;
   top: 75px;
+  text-align: justify;
 }
 
 .third h1 {
@@ -646,6 +650,7 @@ button:hover .fourth {
   color: gainsboro;
   position: relative;
   top: 75px;
+  text-align: justify;
 }
 
 .fourth h1 {
@@ -672,6 +677,7 @@ button:hover .fourth {
   color: lightgreen;
   position: relative;
   top: 89px;
+  text-align: justify;
 }
 
 /* Game Collections Ending */

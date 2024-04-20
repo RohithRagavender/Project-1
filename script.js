@@ -47,5 +47,14 @@ window.addEventListener('scroll', function () {
 });
 
 
+window.addEventListener('scroll', function () {
+  var animationSection = document.querySelector('.cars');
+  var sectionPosition = animationSection.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight;
+  if (sectionPosition < screenPosition) {
+    animationSection.classList.add('show');
+  }
+});
+
 
 /* Animation Effect For Scroll */
