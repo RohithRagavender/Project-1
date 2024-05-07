@@ -3,8 +3,6 @@ setTimeout(function(){
   $('.loader_bg').fadeToggle();
 },800);
 
-
-
 /* Page Loader Function */
 
 /* navigation function */
@@ -36,6 +34,14 @@ window.addEventListener('scroll', function () {
 });
 
 
+window.addEventListener('scroll', function () {
+  var animationSection = document.querySelector('.cardse');
+  var sectionPosition = animationSection.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight;
+  if (sectionPosition < screenPosition) {
+    animationSection.classList.add('show');
+  }
+});
 /*Animation for Review Section */
 window.addEventListener('scroll', function () {
   var animationSection = document.querySelector('.car');
@@ -58,3 +64,17 @@ window.addEventListener('scroll', function () {
 
 
 /* Animation Effect For Scroll */
+
+
+/* Video Autoplay animation */
+const videos = document.querySelectorAll("video")
+
+videos.forEach(video =>{
+  video.addEventListener("mouseover",function(){
+    this.play();
+  })
+
+  video.addEventListener("mouseout",function(){
+    this.pause()
+  })
+})

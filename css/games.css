@@ -344,120 +344,6 @@ header a {
   transform: translateY(0);
   transform: 2s;
 }
-/*
-.car .pic img {
-  position: relative;
-  left: 155px;
-  height: 450px;
-  border-radius: 15px;
-  width:500px;
-  height: 400px;
-  z-index: -1;
-}
-
-
-#h2{
-  display: block;
-  position: relative;
-  left: 300px;
-}
-#h3{
-  display:block;
-  position: relative;
-  left: 280px;
-}
-
-
-/*2nd one Starting*
-.car .pic2 img {
-  position: relative;
-  left:105px;
-  height: 450px;
-  border-radius:15px;
-  z-index: -1;
-  width: 500px;
-  height: 400px;
-}
-
-.car .pic2 h2 {
-  position: relative;
-  top: 25px;
-  z-index: 0;
-  color: white;
-  font-weight: 100;
-  background-color: purple;
-  width: fit-content;
-  padding: 10px;
-  left: 75px;
-  border-radius: 50%;
-}
-
-/* 2nd One Ending */
-
-
-/* 3nd One Starting *
-#h1{
-  position: relative;
-  left: 250px;
-  top:-170px;
-}
-.car .pic1 img {
-  position: relative;
-  top: -180px;
-  width: 500px;
-  left: 155px;
-  height: 400px;
-  border-radius: 15px;
-  z-index: -1;
-}
-
-.car .pic1 h2 {
-  position: relative;
-  top:-150px;
-  z-index: 0;
-  color:black;
-  font-weight: 100;
-  background-color: #9dc6f4;
-  width: fit-content;
-  padding: 10px;
-  left: 125px;
-  border-radius: 50%;
-}
-/* 3nd One Ending */
-
-
-/* 4th one Starting *
-
-#h4{
-  position: relative;
-  left: 250px;
-  top:-170px;
-}
-.car .pic3 img {
-  position: relative;
-  top: -180px;
-  width: 500px;
-  left: 155px;
-  height: 400px;
-  border-radius: 15px;
-  z-index: -1;
-}
-
-.car .pic3 h2 {
-  position: relative;
-  top:-150px;
-  z-index: 0;
-  color:black;
-  font-weight: 100;
-  background-color:#ffa500;
-  width: fit-content;
-  padding: 10px;
-  left: 125px;
-  border-radius: 50%;
-}
-
-
-/* 4th one Ending */
 
 /* Game one Starting */
 
@@ -477,7 +363,7 @@ header a {
 .GameIcon {
   transform: translate(-80px,-50px);
   position: absolute;
-  width: 200px;
+  width: 20 0px;
   height: 200px;
   transition: 0.3s;
 }
@@ -1483,7 +1369,7 @@ height: 60px;
 
 .footer {
   position: relative;
-  top:40px;
+  top:50px;
   height: 550px;
   overflow: hidden;
 }
