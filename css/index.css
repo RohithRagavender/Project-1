@@ -506,9 +506,16 @@ button:hover .fourth {
 
 
 /* Game Collections */
+
+.games{
+  width: 100%;
+  height: 690px;
+  position: relative;
+  top: 95px;
+  padding-top: 45px;
+}
 .gallery {
   opacity: 0;
-  padding-top: 0px;
   transform: translateY(300px);
   transition: opacity 3s;
 }
@@ -520,15 +527,15 @@ button:hover .fourth {
 }
 
 .gallery {
-  position:relative;
-  top: 950px;
+  position: absolute;
   align-content: center;
   display: flex;
   gap: 1rem;
   box-sizing: border-box;
-  height: 55%;
+  height: 80%;
+  top:70px;
   width: 90%;
-  left: 100px;
+  left: 80px;
 }
 
 .gallery>div {
@@ -575,7 +582,7 @@ button:hover .fourth {
 .first h1 {
   color: white;
   background-color: #ff3860;
-  width: 80px;
+  width: 100px;
   text-align: center;
   border-radius: 5px;
   margin: 15px;
@@ -629,7 +636,7 @@ button:hover .fourth {
 .third h1 {
   color: white;
   background-color: #ff3860;
-  width: 80px;
+  width: 100px;
   text-align: center;
   margin: 15px;
   font-family: 'Times New Roman', Times, serif;
@@ -647,7 +654,7 @@ button:hover .fourth {
 
 .third p {
   margin: 15px;
-  color: gainsboro;
+  color: rgb(255, 12, 12);
   position: relative;
   top: 75px;
   text-align: justify;
@@ -682,13 +689,12 @@ button:hover .fourth {
 
 /* Game Collections Ending */
 
-
 /*Recent Games Section Starting  */
 
 .gam img {
   width: 100%;
   position: relative;
-  top: 600px;
+  top:300px;
   object-fit: fill;
   height: 100%;
 }
@@ -701,7 +707,7 @@ button:hover .fourth {
   color: white;
   font-size: medium;
   padding: 5px;
-  top: -150px;
+  top:-650px;
   width: 80px;
 }
 
@@ -709,8 +715,8 @@ button:hover .fourth {
 .word p {
   position: relative;
   text-align: center;
-  right: 35px;
-  top: -140px;
+  right: 30px;
+  top: -590px;
   font-weight: 500;
   color: black;
   font-size: xx-large;
@@ -725,6 +731,8 @@ button:hover .fourth {
   width: 100%;
   height: 105%;
   display: flex;
+  position: relative;
+  top:-420px;
 }
 
 .cards {
@@ -935,7 +943,7 @@ button:hover .fourth {
 .thor {
   position: relative;
   width: 100%;
-  top: 6.5px;
+  top: -292px;
   height: 490px;
 }
 
@@ -1113,7 +1121,7 @@ span {
 .gm img {
   width: 100%;
   position: relative;
-  top: 9px;
+  top:-299px;
   z-index: -1;
   object-fit: fill;
   height: 100%;
@@ -1423,7 +1431,7 @@ span {
 
 .ft {
   position: absolute;
-  top: 3650px;
+  top: 4300px;
   left: 50px;
   bottom: 0;
 }
