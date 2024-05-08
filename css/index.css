@@ -520,7 +520,7 @@ button:hover .fourth {
 }
 
 .gallery {
-  position: absolute;
+  position:relative;
   top: 950px;
   align-content: center;
   display: flex;

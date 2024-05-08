@@ -305,6 +305,10 @@ ul li:hover {
 /*Recent Games Section Starting  */
 
 
+#lo{
+  height:1800px;
+}
+
 .word h1 {
   position: relative;
   background-color: #ff3860;
@@ -907,6 +911,294 @@ margin-bottom:5px;
 
 
 
+/* Game Collections */
+
+.games{
+  width: 100%;
+  height: 690px;
+  position: relative;
+  top:1720px;
+  padding-top: 45px;
+}
+.gallery {
+  opacity: 0;
+  transform: translateY(300px);
+  transition: opacity 3s;
+}
+
+.gallery.show {
+  opacity: 1;
+  transform: translateY(0);
+  transform: 3s;
+}
+
+.gallery {
+  position: absolute;
+  align-content: center;
+  display: flex;
+  gap: 1rem;
+  box-sizing: border-box;
+  height: 80%;
+  width: 90%;
+  left: 80px;
+}
+
+.gallery>div {
+  flex: 1;
+  transition: all 1s;
+}
+
+.gallery>div:nth-child(1) {
+  background: url("../src/1.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+
+.gallery>div:nth-child(2) {
+  background: url("../src/2.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+
+.gallery>div:nth-child(3) {
+  background: url("../src/3.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.gallery>div:nth-child(4) {
+  background: url("../src/4.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+
+.gallery>div:hover {
+  flex: 2;
+  opacity: 1;
+}
+
+.first h1 {
+  color: white;
+  background-color: #ff3860;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.first a {
+  color: blanchedalmond;
+  position: relative;
+  top: 75px;
+  margin: 15px;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.first p {
+  margin: 15px;
+  color: aqua;
+  position: relative;
+  top: 75px;
+  text-align: justify;
+}
+
+.second h1 {
+  color: white;
+  background-color: #09c372;
+  width: 120px;
+  text-align: center;
+  margin: 15px;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.second a {
+  color: rgba(153, 12, 12, 0.801);
+  position: relative;
+  top: 75px;
+  margin: 15px;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.second p {
+  margin: 15px;
+  color: blanchedalmond;
+  position: relative;
+  top: 75px;
+  text-align: justify;
+}
+
+.third h1 {
+  color: white;
+  background-color: #ff3860;
+  width: 100px;
+  text-align: center;
+  margin: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+}
+
+.third a {
+  color: yellow;
+  position: relative;
+  top: 65px;
+  font-weight: 800;
+  margin: 15px;
+  text-align: justify;
+}
+
+.third p {
+  margin: 15px;
+  color: rgb(255, 12, 12);
+  position: relative;
+  top: 75px;
+  text-align: justify;
+}
+
+.fourth h1 {
+  color: white;
+  background-color: #498afb;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.fourth a {
+  color: blanchedalmond;
+  position: relative;
+  top: 85px;
+  margin: 15px;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.fourth p {
+  margin: 15px;
+  color: lightgreen;
+  position: relative;
+  top: 89px;
+  text-align: justify;
+}
+
+/* Game Collections Ending */
+
+
+/* Footer Section  Starting*/
+
+
+.last {
+  height: 560px;
+  position: relative;
+  top:500px;
+}
+
+.footer {
+  position: relative;
+  top:0px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.footer img {
+  width: 100%;
+  height: 550px;
+
+}
+
+.ft {
+  position: absolute;
+  top:0px;
+  left: 50px;
+  bottom: 0;
+}
+
+.pis {
+  z-index: 0;
+  position: relative;
+  height: 450px;
+  left: 475px;
+  width: 845px;
+  display: flex;
+  gap: 20px;
+  top:-500px;
+}
+
+.pi1 {
+  flex-basis: 50%;
+  background: rgb(40, 39, 39);
+  border: 5px solid grey;
+}
+
+.pi2 {
+  flex-basis: 50%;
+  background: rgb(40, 39, 39);
+  border: 5px solid gray;
+}
+
+.pi1 h2,
+.pi2 h2 {
+  margin: 15px 25px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffa500;
+}
+
+.sp1 {
+  width: 100%;
+  display: inline-flex;
+  margin: 15px;
+  height: 100px;
+}
+
+.sp1 img {
+  width: 25%;
+  border-radius: 100% 0% 99% 1% / 30% 64% 36% 70%;
+}
+
+.sp1 p {
+  padding: 25px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.911);
+}
+
+.sp1 h5 {
+  margin-top: 90px;
+  position: relative;
+  text-align: start;
+  width: 250px;
+}
+
+/* Footer Section Ending */
+
+
+footer {
+  width: 100%;
+  bottom:50px;
+  height: 40px;
+  top:500px;
+  position: relative;
+}
+
+footer p {
+  font-size: large;
+  text-align: center;
+  padding-top:2px;
+}
+
+
+
+
 
 /* Animation Effect Starting */
 @keyframes loader {
@@ -1073,29 +1365,29 @@ margin-bottom:5px;
 
   .word {
     position: relative;
-    top: 450px;
+    top:80px;
   }
 
   .word h1 {
-    margin-left: -5px;
+    margin-left:5px;
   }
 
   .word p {
-    margin-top: -2px;
+    margin-top:-20px;
     margin-left: 110px;
   }
 
   .cards {
     display: inline-block;
-    width: 112%;
+    width: 111%;
     height: 100%;
     left:5px;
-    margin-top: -150px;
+    margin-top: -130px;
   }
 
   .cardse{
     display: inline-block;
-    width: 110%;
+    width: 109%;
     height:100%;
     top:250px;
     left: 13px;
@@ -1140,5 +1432,264 @@ margin-bottom:5px;
     width: 100%;
     background-position-x: left;
   }
+
+  .emj {
+    margin-left: -15px;
+  }
+
+  
+
+  /*Game Sections */
+  .games {
+    gap: 1rem;
+    height: 100%;
+    width:407px;
+    top: 2055px;
+    position: relative;
+   }
+
+  .gallery {
+    position: relative;
+    display: inline-block;
+    top:0px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 150%;
+    left:5px;
+    width: 100%;
+  }
+
+  .gallery>div {
+    flex: 1;
+    transition: all 1s;
+  }
+
+  .gallery>div:nth-child(1) {
+    background: url("../src/1.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+
+  .gallery>div:nth-child(2) {
+    background: url("../src/2.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+
+  .gallery>div:nth-child(3) {
+    background: url("../src/3.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  .gallery>div:nth-child(4) {
+    background: url("../src/4.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+
+  .gallery>div:hover {
+    flex: 2;
+    opacity: 1;
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth {
+    height: 350px;
+  }
+
+  .first h1 {
+    color: white;
+    background-color: #ff3860;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .first a {
+    color: blanchedalmond;
+    position: relative;
+    top:15px;
+    font-size: larger;
+    margin: 5px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .first p {
+    margin: 15px;
+    color: aqua;
+    position: relative;
+    top:10px;
+    font-size:14px;
+  }
+
+  .first,
+  .second,
+  .third {
+    margin-bottom: 15px;
+  }
+
+  .second h1 {
+    color: white;
+    background-color: #09c372;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .second a {
+    color: rgba(153, 12, 12, 0.801);
+    position: relative;
+    top: 15px;
+    font-size: large;
+    margin: 15px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .second p {
+    margin: 15px;
+    color: aqua;
+    position: relative;
+    top: 13px;
+    font-size: 14px;
+  }
+
+  .third h1 {
+    color: white;
+    background-color: #ff3860;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .third a {
+    color: yellow;
+    position: relative;
+    top: 15px;
+    font-size: large;
+    margin: 15px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .third p {
+    margin: 15px;
+    color: aqua;
+    position: relative;
+    top: 13px;
+    font-size: 14px;
+  }
+
+  .fourth h1 {
+    color: white;
+    background-color: #498afb;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .fourth a {
+    color: blanchedalmond;
+    position: relative;
+    top: 15px;
+    font-size: large;
+    margin: 15px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .fourth p {
+    margin: 15px;
+    color: turquoise;
+    position: relative;
+    top: 20px;
+  }
+
+  /* End of List of GameType Section */
+
+    
+
+  /*Footer Section Starting*/
+
+  .last {
+    position: relative;
+    display: block;
+    width: 113%;
+    top: 2165px;
+    height: 100%;
+    background-image: radial-gradient(circle, #e89d23, #e3714b, #c15566, #8c496f, #544060, #4c4b65, #4b5464, #535a60, #798185, #a3a9ab, #cfd3d4, #fdffff);
+    left:1px;
+    border: none;
+  }
+
+  .footer img {
+    display: none;
+  }
+
+  .ft {
+    display: none;
+  }
+
+  .pi1,
+  .pi2 {
+    display: block;
+  }
+
+
+  .pis {
+    position: relative;
+    width: 100vw;
+    display: block;
+    border: 5px solid grey;
+    left:25px;
+  }
+
+  .pi1 {
+    position: relative;
+    width: 100%;
+    
+    text-align:center;
+  }
+
+  .pi1 h5,
+  .pi2 h5 {
+    display: none;
+  }
+
+  .pi2 {
+    
+    text-align:justify;
+    position: relative;
+    width: 100%;
+    top: 50px;
+  }
+
+  footer{
+    position: relative;
+    top:2190px;
+    height:70px;
+    width: 113.5%;
+  }
+
+
 
 }
