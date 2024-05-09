@@ -1768,18 +1768,19 @@ footer p {
   .first a {
     color: blanchedalmond;
     position: relative;
-    top: 65px;
+    top: 15px;
     font-size: larger;
-    margin: 5px;
+    margin: 15px;
     font-weight: 800;
     text-align: left;
   }
 
   .first p {
     margin: 15px;
+    font-size: 13px;
     color: aqua;
     position: relative;
-    top: 60px;
+    top:20px;
   }
 
   .first,
@@ -1801,7 +1802,7 @@ footer p {
   .second a {
     color: rgba(153, 12, 12, 0.801);
     position: relative;
-    top: 65px;
+    top: 15px;
     font-size: large;
     margin: 15px;
     font-weight: 800;
@@ -1812,7 +1813,8 @@ footer p {
     margin: 15px;
     color: aqua;
     position: relative;
-    top: 60px;
+    top: 20px;
+    font-size: 13px;
   }
 
   .third h1 {
@@ -1828,7 +1830,7 @@ footer p {
   .third a {
     color: yellow;
     position: relative;
-    top: 65px;
+    top: 15px;
     font-size: large;
     margin: 15px;
     font-weight: 800;
@@ -1839,7 +1841,8 @@ footer p {
     margin: 15px;
     color: aqua;
     position: relative;
-    top: 60px;
+    top: 20px;
+    font-size:13px;
   }
 
   .fourth h1 {
@@ -1855,7 +1858,7 @@ footer p {
   .fourth a {
     color: blanchedalmond;
     position: relative;
-    top: 65px;
+    top: 15px;
     font-size: large;
     margin: 15px;
     font-weight: 800;
@@ -1866,7 +1869,8 @@ footer p {
     margin: 15px;
     color: turquoise;
     position: relative;
-    top: 60px;
+    top:20px;
+    font-size: 13px;
   }
 
   /* End of List of GameType Section */
@@ -1878,15 +1882,16 @@ footer p {
 
   .word {
     position: relative;
-    top: 450px;
+    top: 890px;
   }
 
   .word h1 {
     margin-left: -5px;
+    margin-top: 35px;
   }
 
   .word p {
-    margin-top: -2px;
+    margin-top: -59px;
     margin-left: 110px;
   }
 
